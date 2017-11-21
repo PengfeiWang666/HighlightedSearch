@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WPFViewController.h
 //  HighlightedSearch
 //
 //  Created by Leon on 2017/11/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WPFViewController : UIViewController
 
 
 @end

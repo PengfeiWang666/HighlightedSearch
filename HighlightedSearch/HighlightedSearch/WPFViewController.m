@@ -1,22 +1,23 @@
 //
-//  ViewController.m
+//  WPFViewController.m
 //  HighlightedSearch
 //
 //  Created by Leon on 2017/11/21.
 //  Copyright © 2017年 Leon. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WPFViewController.h"
 
-@interface ViewController ()
+@interface WPFViewController ()
 
 @end
 
-@implementation ViewController
+@implementation WPFViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 
