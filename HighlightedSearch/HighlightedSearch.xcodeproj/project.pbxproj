@@ -13,6 +13,7 @@
 		358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D671FC414D800FD5AAC /* Assets.xcassets */; };
 		358D8D6B1FC414D800FD5AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D691FC414D800FD5AAC /* LaunchScreen.storyboard */; };
 		358D8D6E1FC414D800FD5AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D6D1FC414D800FD5AAC /* main.m */; };
+		358D8D761FC425AE00FD5AAC /* personList.json in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D751FC425AE00FD5AAC /* personList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		358D8D6A1FC414D800FD5AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358D8D6C1FC414D800FD5AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358D8D6D1FC414D800FD5AAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		358D8D751FC425AE00FD5AAC /* personList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,17 @@
 				358D8D691FC414D800FD5AAC /* LaunchScreen.storyboard */,
 				358D8D6C1FC414D800FD5AAC /* Info.plist */,
 				358D8D6D1FC414D800FD5AAC /* main.m */,
+				358D8D741FC425A700FD5AAC /* Otherts */,
 			);
 			path = HighlightedSearch;
+			sourceTree = "<group>";
+		};
+		358D8D741FC425A700FD5AAC /* Otherts */ = {
+			isa = PBXGroup;
+			children = (
+				358D8D751FC425AE00FD5AAC /* personList.json */,
+			);
+			path = Otherts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +142,7 @@
 			files = (
 				358D8D6B1FC414D800FD5AAC /* LaunchScreen.storyboard in Resources */,
 				358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */,
+				358D8D761FC425AE00FD5AAC /* personList.json in Resources */,
 				358D8D661FC414D800FD5AAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
