@@ -7,22 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WPFPinYinTools.h"
 
 @interface WPFPerson : NSObject
 
-/** 人物名称 */
+/** 人物名称，如：王鹏飞 */
 @property (nonatomic, copy) NSString *name;
-/** 拼音全拼（小写） */
+/** 拼音全拼（小写）如：@"wangpengfei" */
 @property (nonatomic, copy) NSString *phoneticSpelling;
-/** 拼音首字母（小写） */
+/** 拼音首字母（小写）如：@"wpf" */
 @property (nonatomic, copy) NSString *firstLetterString;
-/** 拼音全拼（小写）位置 */
+/** 拼音全拼（小写）位置，如：@"0,0,0,0,1,1,1,1,2,2,2" */
 @property (nonatomic, copy) NSString *pinyinLocationString;
-/** 拼音首字母拼音（小写）数组字符串位置 */
+/** 拼音首字母拼音（小写）数组字符串位置，如@"0,1,2" */
 @property (nonatomic, copy) NSString *pinyinFirstLetterLocationString;
 /** 高亮位置 */
 @property (nonatomic, assign) NSInteger highlightLoaction;
 /** 匹配类型 */
 @property (nonatomic, assign) NSInteger matchType;
+
+
+/**
+ 快速构建方法
+
+ @param name 姓名
+ @return 构建完毕的person
+ */
++ (instancetype)personWithName:(NSString *)name hanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat;
 
 @end

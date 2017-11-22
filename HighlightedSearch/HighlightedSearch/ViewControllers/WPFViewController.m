@@ -8,7 +8,7 @@
 
 #import "WPFViewController.h"
 #import "WPFSearchResultViewController.h"
-//#import "PinYinTools.h"
+#import "WPFPerson.h"
 
 @interface WPFViewController () <UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -42,6 +42,19 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     // 将假数据按字母进行排序
     
     // 赋值
+    HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
+    
+    NSMutableArray *tempArray = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < personArray.count; ++i) {
+        @autoreleasepool {
+            NSString *name = personArray[i];
+            WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
+            [tempArray addObject:person];
+        }
+    }
+    
+    
     self.dataSource = personArray;
 }
 
