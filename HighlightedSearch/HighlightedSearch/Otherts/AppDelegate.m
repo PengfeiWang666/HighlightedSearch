@@ -6,6 +6,12 @@
 //  Copyright © 2017年 Leon. All rights reserved.
 //
 
+
+/**
+ * 需要额外说明：做缓存，已经转过的不需要再转了
+ 
+ */
+
 #import "AppDelegate.h"
 #import "WPFViewController.h"
 

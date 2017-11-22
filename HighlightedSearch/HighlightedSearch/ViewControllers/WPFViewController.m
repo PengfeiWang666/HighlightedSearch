@@ -8,6 +8,7 @@
 
 #import "WPFViewController.h"
 #import "WPFSearchResultViewController.h"
+//#import "PinYinTools.h"
 
 @interface WPFViewController () <UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -94,9 +95,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //        self.searchController.searchResultsUpdater = self;
 //        self.searchController.searchBar.delegate = self;
 //        self.searchController.delegate = self;
-//        _searchVC.searchBar.showsCancelButton = YES;
-       
-//       _searchVC.searchBar.barTintColor = [UIColor blackColor];
     }
     return _searchVC;
 }

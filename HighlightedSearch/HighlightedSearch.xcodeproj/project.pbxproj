@@ -14,6 +14,7 @@
 		358D8D6E1FC414D800FD5AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D6D1FC414D800FD5AAC /* main.m */; };
 		358D8D761FC425AE00FD5AAC /* PersonList.json in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D751FC425AE00FD5AAC /* PersonList.json */; };
 		358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */; };
+		358D8D7D1FC54B8C00FD5AAC /* WPFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D7C1FC54B8C00FD5AAC /* WPFPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		358D8D751FC425AE00FD5AAC /* PersonList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonList.json; sourceTree = "<group>"; };
 		358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFSearchResultViewController.h; sourceTree = "<group>"; };
 		358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFSearchResultViewController.m; sourceTree = "<group>"; };
+		358D8D7B1FC54B8C00FD5AAC /* WPFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFPerson.h; sourceTree = "<group>"; };
+		358D8D7C1FC54B8C00FD5AAC /* WPFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		355BEAB31FC54DF900040E0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				358D8D611FC414D800FD5AAC /* WPFViewController.h */,
+				358D8D621FC414D800FD5AAC /* WPFViewController.m */,
+				358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */,
+				358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		355BEAB41FC54E2400040E0F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		355BEAB51FC552D500040E0F /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 		358D8D521FC414D800FD5AAC = {
 			isa = PBXGroup;
 			children = (
@@ -61,17 +89,15 @@
 		358D8D5D1FC414D800FD5AAC /* HighlightedSearch */ = {
 			isa = PBXGroup;
 			children = (
-				358D8D5E1FC414D800FD5AAC /* AppDelegate.h */,
-				358D8D5F1FC414D800FD5AAC /* AppDelegate.m */,
-				358D8D611FC414D800FD5AAC /* WPFViewController.h */,
-				358D8D621FC414D800FD5AAC /* WPFViewController.m */,
-				358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */,
-				358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */,
+				355BEAB51FC552D500040E0F /* 3rd */,
+				355BEAB41FC54E2400040E0F /* Tools */,
+				358D8D7A1FC54B7800FD5AAC /* Model */,
+				355BEAB31FC54DF900040E0F /* ViewControllers */,
+				358D8D741FC425A700FD5AAC /* Otherts */,
 				358D8D671FC414D800FD5AAC /* Assets.xcassets */,
 				358D8D691FC414D800FD5AAC /* LaunchScreen.storyboard */,
 				358D8D6C1FC414D800FD5AAC /* Info.plist */,
 				358D8D6D1FC414D800FD5AAC /* main.m */,
-				358D8D741FC425A700FD5AAC /* Otherts */,
 			);
 			path = HighlightedSearch;
 			sourceTree = "<group>";
@@ -79,9 +105,20 @@
 		358D8D741FC425A700FD5AAC /* Otherts */ = {
 			isa = PBXGroup;
 			children = (
+				358D8D5E1FC414D800FD5AAC /* AppDelegate.h */,
+				358D8D5F1FC414D800FD5AAC /* AppDelegate.m */,
 				358D8D751FC425AE00FD5AAC /* PersonList.json */,
 			);
 			path = Otherts;
+			sourceTree = "<group>";
+		};
+		358D8D7A1FC54B7800FD5AAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				358D8D7B1FC54B8C00FD5AAC /* WPFPerson.h */,
+				358D8D7C1FC54B8C00FD5AAC /* WPFPerson.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +196,7 @@
 				358D8D6E1FC414D800FD5AAC /* main.m in Sources */,
 				358D8D601FC414D800FD5AAC /* AppDelegate.m in Sources */,
 				358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */,
+				358D8D7D1FC54B8C00FD5AAC /* WPFPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +325,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ST685X75RG;
 				INFOPLIST_FILE = HighlightedSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.HighlightedSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,10 +340,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ST685X75RG;
 				INFOPLIST_FILE = HighlightedSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.HighlightedSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
