@@ -10,7 +10,7 @@
 #import "WPFSearchResultViewController.h"
 #import "WPFPerson.h"
 
-@interface WPFViewController () <UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate>
+@interface WPFViewController () <UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate>
 
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) UITableView *tableView;
@@ -67,6 +67,41 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
 }
 
+#pragma mark - UISearchBarDelegate
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
+    [self.searchVC.searchBar setShowsCancelButton:YES animated:NO];
+    return YES;
+}
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [self settingNavigationItemBarButtons:NO];
+}
+
+- (void)settingNavigationItemBarButtons:(BOOL)searchBarIsExpand {
+    if (searchBarIsExpand) {
+        
+        
+    } else {
+       
+    }
+}
+
+#pragma mark - UISearchResultsUpdating
+// 更新搜索结果
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+    
+    
+}
+
+#pragma mark  UISearchControllerDelegate
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    UITableView *resultTableView = self.searchResultVC.tableView;
+    
+    CGRect rect = resultTableView.frame;
+    rect.origin.y = 0;
+    resultTableView.frame = rect;
+}
+
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
@@ -105,9 +140,9 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     if (!_searchVC) {
         _searchVC = [[UISearchController alloc] initWithSearchResultsController:self.searchResultVC];
         _searchVC.hidesNavigationBarDuringPresentation = NO;
-//        self.searchController.searchResultsUpdater = self;
-//        self.searchController.searchBar.delegate = self;
-//        self.searchController.delegate = self;
+        _searchVC.searchResultsUpdater = self;
+        _searchVC.searchBar.delegate = self;
+        _searchVC.delegate = self;
     }
     return _searchVC;
 }

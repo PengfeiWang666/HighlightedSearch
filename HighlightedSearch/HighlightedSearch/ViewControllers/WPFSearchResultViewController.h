@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WPFSearchResultViewController : UIViewController
+@interface WPFSearchResultViewController : UITableViewController
 
 @end
