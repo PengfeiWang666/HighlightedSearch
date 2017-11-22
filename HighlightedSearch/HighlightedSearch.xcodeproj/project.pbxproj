@@ -12,7 +12,8 @@
 		358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D671FC414D800FD5AAC /* Assets.xcassets */; };
 		358D8D6B1FC414D800FD5AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D691FC414D800FD5AAC /* LaunchScreen.storyboard */; };
 		358D8D6E1FC414D800FD5AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D6D1FC414D800FD5AAC /* main.m */; };
-		358D8D761FC425AE00FD5AAC /* personList.json in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D751FC425AE00FD5AAC /* personList.json */; };
+		358D8D761FC425AE00FD5AAC /* PersonList.json in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D751FC425AE00FD5AAC /* PersonList.json */; };
+		358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,9 @@
 		358D8D6A1FC414D800FD5AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358D8D6C1FC414D800FD5AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358D8D6D1FC414D800FD5AAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		358D8D751FC425AE00FD5AAC /* personList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personList.json; sourceTree = "<group>"; };
+		358D8D751FC425AE00FD5AAC /* PersonList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonList.json; sourceTree = "<group>"; };
+		358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFSearchResultViewController.h; sourceTree = "<group>"; };
+		358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFSearchResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				358D8D5F1FC414D800FD5AAC /* AppDelegate.m */,
 				358D8D611FC414D800FD5AAC /* WPFViewController.h */,
 				358D8D621FC414D800FD5AAC /* WPFViewController.m */,
+				358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */,
+				358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */,
 				358D8D671FC414D800FD5AAC /* Assets.xcassets */,
 				358D8D691FC414D800FD5AAC /* LaunchScreen.storyboard */,
 				358D8D6C1FC414D800FD5AAC /* Info.plist */,
@@ -74,7 +79,7 @@
 		358D8D741FC425A700FD5AAC /* Otherts */ = {
 			isa = PBXGroup;
 			children = (
-				358D8D751FC425AE00FD5AAC /* personList.json */,
+				358D8D751FC425AE00FD5AAC /* PersonList.json */,
 			);
 			path = Otherts;
 			sourceTree = "<group>";
@@ -139,7 +144,7 @@
 			files = (
 				358D8D6B1FC414D800FD5AAC /* LaunchScreen.storyboard in Resources */,
 				358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */,
-				358D8D761FC425AE00FD5AAC /* personList.json in Resources */,
+				358D8D761FC425AE00FD5AAC /* PersonList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +158,7 @@
 				358D8D631FC414D800FD5AAC /* WPFViewController.m in Sources */,
 				358D8D6E1FC414D800FD5AAC /* main.m in Sources */,
 				358D8D601FC414D800FD5AAC /* AppDelegate.m in Sources */,
+				358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
