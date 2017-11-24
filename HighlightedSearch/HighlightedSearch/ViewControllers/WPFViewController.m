@@ -29,6 +29,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     [self _initializeData];
     
     [self _setupUI];
+    
 }
 
 #pragma mark - Private Method
@@ -45,7 +46,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
     NSMutableArray *tempArray = [NSMutableArray array];
-    
+    NSLog(@"开始解析数据了，数据条数：%ld", personArray.count);
     for (NSInteger i = 0; i < personArray.count; ++i) {
         @autoreleasepool {
             NSString *name = personArray[i];
@@ -54,7 +55,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         }
     }
     
-    
+    NSLog(@"数据解析完毕！");
     self.dataSource = personArray;
 }
 
@@ -98,7 +99,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     UITableView *resultTableView = self.searchResultVC.tableView;
     
     CGRect rect = resultTableView.frame;
-    rect.origin.y = 0;
+    rect.origin.y = [UIApplication sharedApplication].statusBarFrame.size.height +self.navigationController.navigationBar.frame.size.height;
     resultTableView.frame = rect;
 }
 
@@ -140,6 +141,10 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     if (!_searchVC) {
         _searchVC = [[UISearchController alloc] initWithSearchResultsController:self.searchResultVC];
         _searchVC.hidesNavigationBarDuringPresentation = NO;
+        // 是否添加半透明遮罩；默认为YES
+        _searchVC.dimsBackgroundDuringPresentation = NO;
+        // NO表示UISearchController在present时，可以覆盖当前controller，默认为NO
+        _searchVC.definesPresentationContext = NO;
         _searchVC.searchResultsUpdater = self;
         _searchVC.searchBar.delegate = self;
         _searchVC.delegate = self;
