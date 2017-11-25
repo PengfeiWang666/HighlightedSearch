@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "PinYin4Objc.h"
 
+@interface WPFSearchResultModel : NSObject
+
+@property (nonatomic, assign) NSRange highlightRang; // 高亮位置
+@property (nonatomic, assign) NSInteger matchType; // 搜索到的类型
+
+@end
+
 @interface WPFPinYinTools : NSObject
 
 /** 判断传入的字符串是否是纯中文 */
@@ -19,5 +26,12 @@
 + (NSString *)firstCharactor:(NSString *)aString withFormat:(HanyuPinyinOutputFormat *)pinyinFormat;
 
 + (HanyuPinyinOutputFormat *)getOutputFormat;
+
++ (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
+                                                     nameString:(NSString *)nameStrStrLower
+                                               phoneticSpelling:(NSString *)phoneticSpelling
+                                              firstLetterString:(NSString *)firstLetterString
+                                           pinyinLocationString:(NSString *)pinyinLocationString
+                                pinyinFirstLetterLocationString:(NSString *)pinyinFirstLetterLocationString;
 
 @end

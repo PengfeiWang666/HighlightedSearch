@@ -89,6 +89,20 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 #pragma mark - UISearchResultsUpdating
 // 更新搜索结果
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    NSLog(@"%@", searchController.searchBar.text);
+    
+    // 遍历数据源，查看是否匹配，刷新结果列表
+    // 后期考虑优化遍历效率
+    for (NSInteger i = 0; i < self.dataSource.count; i++) {
+        WPFPerson *person = self.dataSource[i];
+        
+        [WPFPinYinTools searchEffectiveResultWithSearchString:searchController.searchBar.text
+                                                   nameString:person.name
+                                             phoneticSpelling:person.phoneticSpelling
+                                            firstLetterString:person.firstLetterString
+                                         pinyinLocationString:person.pinyinLocationString
+                              pinyinFirstLetterLocationString:person.pinyinFirstLetterLocationString];
+    }
     
     
     
