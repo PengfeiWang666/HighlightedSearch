@@ -56,7 +56,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     }
     
     NSLog(@"数据解析完毕！");
-    self.dataSource = personArray;
+    self.dataSource = tempArray;
 }
 
 - (void)_setupUI {
@@ -124,7 +124,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-    cell.textLabel.text = self.dataSource[indexPath.row];
+    WPFPerson *person = self.dataSource[indexPath.row];
+    cell.textLabel.text = person.name;
     return cell;
 }
 

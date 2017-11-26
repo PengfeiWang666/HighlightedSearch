@@ -38,6 +38,7 @@
             firstLetterString = [firstLetterString stringByAppendingString:hanyuCharString];
         }
     }
+    person.name = name;
     person.phoneticSpelling = phoneticSpelling;
     person.firstLetterString = firstLetterString;
     person.pinyinLocationString = [phoneticSpellingArray componentsJoinedByString:@","];
