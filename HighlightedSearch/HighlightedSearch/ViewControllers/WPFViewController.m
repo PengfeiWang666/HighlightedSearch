@@ -129,7 +129,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
     CGRect rect = resultTableView.frame;
     rect.origin.y = [UIApplication sharedApplication].statusBarFrame.size.height +self.navigationController.navigationBar.frame.size.height;
-    rect.size.height -= rect.origin.y;
+    rect.size.height = [UIScreen mainScreen].bounds.size.height - rect.origin.y;
     resultTableView.frame = rect;
 }
 
