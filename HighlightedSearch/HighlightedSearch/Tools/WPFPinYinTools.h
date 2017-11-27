@@ -34,4 +34,6 @@
                                            pinyinLocationString:(NSString *)pinyinLocationString
                                 pinyinFirstLetterLocationString:(NSString *)pinyinFirstLetterLocationString;
 
++ (NSArray *)sortingRules;
+
 @end

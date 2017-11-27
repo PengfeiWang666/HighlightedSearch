@@ -91,19 +91,34 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSLog(@"%@", searchController.searchBar.text);
     
+    [self.searchResultVC.resultDataSource removeAllObjects];
+    
     // 遍历数据源，查看是否匹配，刷新结果列表
     // 后期考虑优化遍历效率
     for (NSInteger i = 0; i < self.dataSource.count; i++) {
         WPFPerson *person = self.dataSource[i];
         
-        [WPFPinYinTools searchEffectiveResultWithSearchString:searchController.searchBar.text
+        WPFSearchResultModel *resultModel = [WPFPinYinTools
+                                             searchEffectiveResultWithSearchString:searchController.searchBar.text.lowercaseString
                                                    nameString:person.name
                                              phoneticSpelling:person.phoneticSpelling
                                             firstLetterString:person.firstLetterString
                                          pinyinLocationString:person.pinyinLocationString
                               pinyinFirstLetterLocationString:person.pinyinFirstLetterLocationString];
+        
+        if (resultModel.highlightRang.length) {
+            person.highlightLoaction = resultModel.highlightRang.location;
+            person.textRange = resultModel.highlightRang;
+            person.matchType = resultModel.matchType;
+            [self.searchResultVC.resultDataSource addObject:person];
+        }
     }
     
+//    [self.searchResultVC.resultDataSource sortUsingDescriptors:[WPFPinYinTools sortingRules]];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.searchResultVC.tableView reloadData];
+    });
     
     
 }

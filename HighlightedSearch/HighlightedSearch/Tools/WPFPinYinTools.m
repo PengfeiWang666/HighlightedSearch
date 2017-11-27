@@ -117,4 +117,10 @@
     return searchModel;
 }
 
++ (NSArray *)sortingRules {
+    NSSortDescriptor *desType = [NSSortDescriptor sortDescriptorWithKey:@"matchType" ascending:YES];
+    NSSortDescriptor *desLocation = [NSSortDescriptor sortDescriptorWithKey:@"highlightLoaction" ascending:YES];
+    return @[desType,desLocation];
+}
+
 @end

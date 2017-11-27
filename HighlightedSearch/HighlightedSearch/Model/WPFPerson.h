@@ -23,6 +23,8 @@
 @property (nonatomic, copy) NSString *pinyinFirstLetterLocationString;
 /** 高亮位置 */
 @property (nonatomic, assign) NSInteger highlightLoaction;
+/**  */
+@property (nonatomic, assign) NSRange textRange;
 /** 匹配类型 */
 @property (nonatomic, assign) NSInteger matchType;
 

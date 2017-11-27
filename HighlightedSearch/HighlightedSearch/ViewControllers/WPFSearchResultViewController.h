@@ -10,4 +10,6 @@
 
 @interface WPFSearchResultViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *resultDataSource;
+
 @end
