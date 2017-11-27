@@ -38,7 +38,11 @@ static NSString *kResultCellIdentifier = @"kResultCellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kResultCellIdentifier];
     WPFPerson *person = self.resultDataSource[indexPath.row];
-    cell.textLabel.text = person.name;
+    // 设置关键字高亮
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:person.name];
+    UIColor *highlightedColor = [UIColor colorWithRed:0 green:131/255.0 blue:0 alpha:1.0];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:highlightedColor range:person.textRange];
+    cell.textLabel.attributedText = attributedString;
     
     return cell;
 }

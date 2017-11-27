@@ -114,7 +114,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         }
     }
     
-//    [self.searchResultVC.resultDataSource sortUsingDescriptors:[WPFPinYinTools sortingRules]];
+    [self.searchResultVC.resultDataSource sortUsingDescriptors:[WPFPinYinTools sortingRules]];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.searchResultVC.tableView reloadData];
