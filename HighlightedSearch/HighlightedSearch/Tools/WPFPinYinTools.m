@@ -44,20 +44,20 @@
 }
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
-                                                     nameString:(NSString *)nameStrStrLower
-                                               phoneticSpelling:(NSString *)phoneticSpelling
-                                              firstLetterString:(NSString *)firstLetterString
+                                                     nameString:(NSString *)nameStrLower
+                                               completeSpelling:(NSString *)completeSpelling
+                                                  initialString:(NSString *)initialString
                                            pinyinLocationString:(NSString *)pinyinLocationString
-                                pinyinFirstLetterLocationString:(NSString *)pinyinFirstLetterLocationString {
+                                          initialLocationString:(NSString *)initialLocationString {
     
     WPFSearchResultModel *searchModel = [[WPFSearchResultModel alloc] init];
     
-    NSArray *phoneticSpellingArray = [pinyinLocationString componentsSeparatedByString:@","];
-    NSArray *pinyinFirstLetterLocationArray = [pinyinFirstLetterLocationString componentsSeparatedByString:@","];
+    NSArray *completeSpellingArray = [pinyinLocationString componentsSeparatedByString:@","];
+    NSArray *pinyinFirstLetterLocationArray = [initialLocationString componentsSeparatedByString:@","];
     
-    NSRange rang = [nameStrStrLower rangeOfString:searchStrLower]; // 完全匹配位置
-    NSRange rangTwo = [phoneticSpelling rangeOfString:searchStrLower]; // 拼音全拼匹配位置
-    NSRange rangThree = [firstLetterString rangeOfString:searchStrLower]; // 拼音首字母匹配位置
+    NSRange rang = [nameStrLower rangeOfString:searchStrLower]; // 完全匹配位置
+    NSRange rangTwo = [completeSpelling rangeOfString:searchStrLower]; // 拼音全拼匹配位置
+    NSRange rangThree = [initialString rangeOfString:searchStrLower]; // 拼音首字母匹配位置
     
     // 完全匹配
     if (rang.length!=0) {
@@ -70,16 +70,16 @@
     if (rangTwo.length!=0) {
         if (rangTwo.location ==0) {
             // MARK: 拼音首字母匹配从0开始
-            NSRange finalRange = NSMakeRange(0, [phoneticSpellingArray[rangTwo.length-1] integerValue] +1);
+            NSRange finalRange = NSMakeRange(0, [completeSpellingArray[rangTwo.length-1] integerValue] +1);
             searchModel.highlightRang = finalRange;
             searchModel.matchType = 2;
             if (finalRange.length!=0) {
                 return searchModel;
             }
         } else {
-            if ([phoneticSpellingArray[rangTwo.location] integerValue] != [phoneticSpellingArray[rangTwo.location-1] integerValue]) {
+            if ([completeSpellingArray[rangTwo.location] integerValue] != [completeSpellingArray[rangTwo.location-1] integerValue]) {
                 // MARK: 拼音全拼匹配
-                NSRange finalRange = NSMakeRange([phoneticSpellingArray[rangTwo.location] integerValue], [phoneticSpellingArray[rangTwo.length+rangTwo.location -1] integerValue] - [phoneticSpellingArray[rangTwo.location] integerValue] +1);
+                NSRange finalRange = NSMakeRange([completeSpellingArray[rangTwo.location] integerValue], [completeSpellingArray[rangTwo.length+rangTwo.location -1] integerValue] - [completeSpellingArray[rangTwo.location] integerValue] +1);
                 searchModel.highlightRang = finalRange;
                 searchModel.matchType = 2;
                 if (finalRange.length!=0) {

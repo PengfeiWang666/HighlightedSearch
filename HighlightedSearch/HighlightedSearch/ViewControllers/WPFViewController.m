@@ -101,10 +101,10 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         WPFSearchResultModel *resultModel = [WPFPinYinTools
                                              searchEffectiveResultWithSearchString:searchController.searchBar.text.lowercaseString
                                                    nameString:person.name
-                                             phoneticSpelling:person.phoneticSpelling
-                                            firstLetterString:person.firstLetterString
+                                             completeSpelling:person.completeSpelling
+                                                initialString:person.initialString
                                          pinyinLocationString:person.pinyinLocationString
-                              pinyinFirstLetterLocationString:person.pinyinFirstLetterLocationString];
+                                        initialLocationString:person.initialLocationString];
         
         if (resultModel.highlightRang.length) {
             person.highlightLoaction = resultModel.highlightRang.location;

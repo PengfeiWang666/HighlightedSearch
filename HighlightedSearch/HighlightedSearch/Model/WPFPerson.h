@@ -14,13 +14,16 @@
 /** 人物名称，如：王鹏飞 */
 @property (nonatomic, copy) NSString *name;
 /** 拼音全拼（小写）如：@"wangpengfei" */
-@property (nonatomic, copy) NSString *phoneticSpelling;
+@property (nonatomic, copy) NSString *completeSpelling;
 /** 拼音首字母（小写）如：@"wpf" */
-@property (nonatomic, copy) NSString *firstLetterString;
-/** 拼音全拼（小写）位置，如：@"0,0,0,0,1,1,1,1,2,2,2" */
+@property (nonatomic, copy) NSString *initialString;
+/**
+ 拼音全拼（小写）位置，如：@"0,0,0,0,1,1,1,1,2,2,2"
+                        w a n g*p e n g*f e i
+ */
 @property (nonatomic, copy) NSString *pinyinLocationString;
 /** 拼音首字母拼音（小写）数组字符串位置，如@"0,1,2" */
-@property (nonatomic, copy) NSString *pinyinFirstLetterLocationString;
+@property (nonatomic, copy) NSString *initialLocationString;
 /** 高亮位置 */
 @property (nonatomic, assign) NSInteger highlightLoaction;
 /**  */

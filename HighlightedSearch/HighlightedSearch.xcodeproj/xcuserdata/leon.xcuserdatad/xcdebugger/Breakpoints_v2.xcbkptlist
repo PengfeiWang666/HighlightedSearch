@@ -4,22 +4,6 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Model/WPFPerson.m"
-            timestampString = "533457793.959165"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "+personWithName:hanyuPinyinOutputFormat:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
@@ -36,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/ViewControllers/WPFViewController.m"
-            timestampString = "533457793.959474"
+            timestampString = "533459080.18396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
@@ -52,12 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960039"
+            timestampString = "533459080.184211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -68,12 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960243"
+            timestampString = "533459080.184726"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -84,12 +68,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960307"
+            timestampString = "533459080.184981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,12 +84,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960359"
+            timestampString = "533459080.18523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
             endingLineNumber = "100"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -116,12 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960409"
+            timestampString = "533459080.185475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -132,12 +116,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533457793.960458"
+            timestampString = "533459080.185741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:phoneticSpelling:firstLetterString:pinyinLocationString:pinyinFirstLetterLocationString:"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

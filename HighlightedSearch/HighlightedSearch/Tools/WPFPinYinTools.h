@@ -29,10 +29,10 @@
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
                                                      nameString:(NSString *)nameStrStrLower
-                                               phoneticSpelling:(NSString *)phoneticSpelling
-                                              firstLetterString:(NSString *)firstLetterString
+                                               completeSpelling:(NSString *)completeSpelling
+                                                  initialString:(NSString *)initialString
                                            pinyinLocationString:(NSString *)pinyinLocationString
-                                pinyinFirstLetterLocationString:(NSString *)pinyinFirstLetterLocationString;
+                                          initialLocationString:(NSString *)initialLocationString;
 
 + (NSArray *)sortingRules;
 
