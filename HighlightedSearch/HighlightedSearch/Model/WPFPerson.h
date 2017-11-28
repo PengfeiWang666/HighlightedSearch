@@ -19,7 +19,7 @@
 @property (nonatomic, copy) NSString *initialString;
 /**
  拼音全拼（小写）位置，如：@"0,0,0,0,1,1,1,1,2,2,2"
-                        w a n g*p e n g*f e i
+                        w a n g p e n g f e i
  */
 @property (nonatomic, copy) NSString *pinyinLocationString;
 /** 拼音首字母拼音（小写）数组字符串位置，如@"0,1,2" */

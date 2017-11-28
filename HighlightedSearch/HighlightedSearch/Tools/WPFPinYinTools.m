@@ -70,31 +70,34 @@
     NSArray *completeSpellingArray = [pinyinLocationString componentsSeparatedByString:@","];
     NSArray *pinyinFirstLetterLocationArray = [initialLocationString componentsSeparatedByString:@","];
     
-    NSRange rang = [nameStrLower rangeOfString:searchStrLower]; // 完全匹配位置
-    NSRange rangTwo = [completeSpelling rangeOfString:searchStrLower]; // 拼音全拼匹配位置
-    NSRange rangThree = [initialString rangeOfString:searchStrLower]; // 拼音首字母匹配位置
+    // 完全中文匹配范围
+    NSRange chineseRange = [nameStrLower rangeOfString:searchStrLower];
+    // 拼音全拼匹配范围
+    NSRange complateRange = [completeSpelling rangeOfString:searchStrLower];
+    // 拼音首字母匹配范围
+    NSRange initialRange = [initialString rangeOfString:searchStrLower];
     
     // 完全匹配
-    if (rang.length!=0) {
-        searchModel.highlightRang = rang;
+    if (chineseRange.length!=0) {
+        searchModel.highlightRang = chineseRange;
         searchModel.matchType = 1;
         return searchModel;
     }
     
     // 拼音全拼匹配
-    if (rangTwo.length!=0) {
-        if (rangTwo.location ==0) {
+    if (complateRange.length!=0) {
+        if (complateRange.location ==0) {
             // MARK: 拼音首字母匹配从0开始
-            NSRange finalRange = NSMakeRange(0, [completeSpellingArray[rangTwo.length-1] integerValue] +1);
+            NSRange finalRange = NSMakeRange(0, [completeSpellingArray[complateRange.length-1] integerValue] +1);
             searchModel.highlightRang = finalRange;
             searchModel.matchType = 2;
             if (finalRange.length!=0) {
                 return searchModel;
             }
         } else {
-            if ([completeSpellingArray[rangTwo.location] integerValue] != [completeSpellingArray[rangTwo.location-1] integerValue]) {
+            if ([completeSpellingArray[complateRange.location] integerValue] != [completeSpellingArray[complateRange.location-1] integerValue]) {
                 // MARK: 拼音全拼匹配
-                NSRange finalRange = NSMakeRange([completeSpellingArray[rangTwo.location] integerValue], [completeSpellingArray[rangTwo.length+rangTwo.location -1] integerValue] - [completeSpellingArray[rangTwo.location] integerValue] +1);
+                NSRange finalRange = NSMakeRange([completeSpellingArray[complateRange.location] integerValue], [completeSpellingArray[complateRange.length+complateRange.location -1] integerValue] - [completeSpellingArray[complateRange.location] integerValue] +1);
                 searchModel.highlightRang = finalRange;
                 searchModel.matchType = 2;
                 if (finalRange.length!=0) {
@@ -105,10 +108,10 @@
     }
     
     // 拼音首字母匹配
-    if (rangThree.length!=0) {
-        if (rangThree.location ==0) {
+    if (initialRange.length!=0) {
+        if (initialRange.location ==0) {
             // MARK: 拼音首字母匹配从0开始
-            NSRange finalRange = NSMakeRange(0, [pinyinFirstLetterLocationArray[rangThree.length-1] integerValue]-[pinyinFirstLetterLocationArray[rangThree.location] integerValue] +1);
+            NSRange finalRange = NSMakeRange(0, [pinyinFirstLetterLocationArray[initialRange.length-1] integerValue]-[pinyinFirstLetterLocationArray[initialRange.location] integerValue] +1);
             searchModel.highlightRang = finalRange;
             searchModel.matchType = 3;
             if (finalRange.length!=0) {
@@ -116,8 +119,8 @@
             }
         } else {
             // MARK: 拼音首字母匹配
-            if ([pinyinFirstLetterLocationArray[rangThree.location] integerValue] != [pinyinFirstLetterLocationArray[rangThree.location - 1] integerValue]) {
-                NSRange finalRange = NSMakeRange([pinyinFirstLetterLocationArray[rangThree.location] integerValue], [pinyinFirstLetterLocationArray[rangThree.length+rangThree.location-1] integerValue]-[pinyinFirstLetterLocationArray[rangThree.location] integerValue] +1);
+            if ([pinyinFirstLetterLocationArray[initialRange.location] integerValue] != [pinyinFirstLetterLocationArray[initialRange.location - 1] integerValue]) {
+                NSRange finalRange = NSMakeRange([pinyinFirstLetterLocationArray[initialRange.location] integerValue], [pinyinFirstLetterLocationArray[initialRange.length+initialRange.location-1] integerValue]-[pinyinFirstLetterLocationArray[initialRange.location] integerValue] +1);
                 searchModel.highlightRang = finalRange;
                 searchModel.matchType = 3;
                 if (finalRange.length!=0) {
