@@ -42,7 +42,7 @@ typedef NS_ENUM(NSUInteger, MatchType) {
                                                   initialString:(NSString *)initialString
                                            pinyinLocationString:(NSString *)pinyinLocationString
                                           initialLocationString:(NSString *)initialLocationString;
-
+/** 排序规则 */
 + (NSArray *)sortingRules;
 
 @end

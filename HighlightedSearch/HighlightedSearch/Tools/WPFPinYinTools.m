@@ -128,7 +128,9 @@
 }
 
 + (NSArray *)sortingRules {
+    // 按照 matchType 顺序排列，即优先展示 中文，其次是全拼匹配，最后是拼音首字母匹配
     NSSortDescriptor *desType = [NSSortDescriptor sortDescriptorWithKey:@"matchType" ascending:YES];
+    // 优先显示 高亮位置索引靠前的搜索结果
     NSSortDescriptor *desLocation = [NSSortDescriptor sortDescriptorWithKey:@"highlightLoaction" ascending:YES];
     return @[desType,desLocation];
 }
