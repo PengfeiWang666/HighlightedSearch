@@ -25,6 +25,7 @@
 /** 获取传入字符串的第一个拼音字母 */
 + (NSString *)firstCharactor:(NSString *)aString withFormat:(HanyuPinyinOutputFormat *)pinyinFormat;
 
+/** 获取格式化器 */
 + (HanyuPinyinOutputFormat *)getOutputFormat;
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower

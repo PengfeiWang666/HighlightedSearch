@@ -29,7 +29,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     [self _initializeData];
     
     [self _setupUI];
-    
 }
 
 #pragma mark - Private Method
@@ -46,7 +45,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
     NSMutableArray *tempArray = [NSMutableArray array];
-    NSLog(@"开始解析数据了，数据条数：%ld", personArray.count);
+    NSLog(@"开始解析数据了，数据条数：%ld", (unsigned long)personArray.count);
     for (NSInteger i = 0; i < personArray.count; ++i) {
         @autoreleasepool {
             NSString *name = personArray[i];

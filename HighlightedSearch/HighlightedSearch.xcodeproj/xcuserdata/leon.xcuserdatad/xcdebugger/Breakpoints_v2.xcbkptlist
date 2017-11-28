@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/ViewControllers/WPFViewController.m"
-            timestampString = "533459080.18396"
+            timestampString = "533544643.790821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-updateSearchResultsForSearchController:"
             landmarkType = "7">
          </BreakpointContent>
@@ -35,93 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.184211"
+            filePath = "HighlightedSearch/Model/WPFPerson.m"
+            timestampString = "533544643.790892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.184726"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.184981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.18523"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.185475"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "533459080.185741"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "+personWithName:hanyuPinyinOutputFormat:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
