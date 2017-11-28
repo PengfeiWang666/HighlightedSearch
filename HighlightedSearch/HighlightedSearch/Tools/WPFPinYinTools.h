@@ -5,6 +5,7 @@
 //  Created by Leon on 2017/11/22.
 //  Copyright © 2017年 Leon. All rights reserved.
 //
+// TODO:多音字的匹配
 
 #import <Foundation/Foundation.h>
 #import "PinYin4Objc.h"
