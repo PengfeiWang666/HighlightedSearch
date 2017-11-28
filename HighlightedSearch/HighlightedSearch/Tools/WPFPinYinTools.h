@@ -9,10 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "PinYin4Objc.h"
 
+typedef NS_ENUM(NSUInteger, MatchType) {
+    MatchTypeChinese,  // 中文完全匹配
+    MatchTypeComplate, // 拼音全拼匹配
+    MatchTypeInitial,  // 拼音简拼匹配
+};
+
 @interface WPFSearchResultModel : NSObject
 
-@property (nonatomic, assign) NSRange highlightRang; // 高亮位置
-@property (nonatomic, assign) NSInteger matchType; // 搜索到的类型
+/** 高亮范围 */
+@property (nonatomic, assign) NSRange highlightRang;
+/** 匹配类型 */
+@property (nonatomic, assign) MatchType matchType;
 
 @end
 
