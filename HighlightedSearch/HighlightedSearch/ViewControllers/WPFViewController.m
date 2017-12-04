@@ -47,30 +47,32 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     NSMutableArray *tempArray = [NSMutableArray array];
     NSLog(@"开始解析数据了，数据条数：%ld", (unsigned long)personArray.count);
     
-    /** 耗时 0.0862秒
-     2017-12-04 16:26:55.133029+0800 HighlightedSearch[87833:10581129] 开始解析数据了，数据条数：547
-     2017-12-04 16:26:55.219175+0800 HighlightedSearch[87833:10581129] 数据解析完毕！
+    // 以下测试数据均为 iPhone SE（10.2） 真机测试
+    /** 耗时 0.249秒
+     2017-12-04 16:53:10.034389 HighlightedSearch[3679:1755567] 开始解析数据了，数据条数：547
+     2017-12-04 16:53:10.283026 HighlightedSearch[3679:1755567] 数据解析完毕！
      */
-//    for (NSInteger i = 0; i < personArray.count; ++i) {
+    for (NSInteger i = 0; i < personArray.count; ++i) {
     
-    /** 耗时0.088秒
-     2017-12-04 16:24:33.293051+0800 HighlightedSearch[87790:10577240] 开始解析数据了，数据条数：547
-     2017-12-04 16:24:33.381268+0800 HighlightedSearch[87790:10577240] 数据解析完毕！
+    /** 耗时0.278秒
+     2017-12-04 16:50:10.360442 HighlightedSearch[3664:1754291] 开始解析数据了，数据条数：547
+     2017-12-04 16:50:10.638785 HighlightedSearch[3664:1754291] 数据解析完毕！
      */
 //    for (NSString *name in personArray) {
     
-    /** 耗时 0.046秒
-     2017-12-04 16:21:13.108658+0800 HighlightedSearch[87755:10572526] 开始解析数据了，数据条数：547
-     2017-12-04 16:21:13.154809+0800 HighlightedSearch[87755:10572526] 数据解析完毕！
+    /** 耗时 0.157秒
+     2017-12-04 16:47:53.417648 HighlightedSearch[3657:1753487] 开始解析数据了，数据条数：547
+     2017-12-04 16:47:53.564198 HighlightedSearch[3657:1753487] 数据解析完毕！
      */
     // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
-    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        @autoreleasepool {
-            //            NSString *name = personArray[i];
-            WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
+//    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        @autoreleasepool {
+                        NSString *name = personArray[i];
+            WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
             [tempArray addObject:person];
-//        }
-    }];
+        }
+    }
+//    }];
     
     NSLog(@"数据解析完毕！");
     self.dataSource = tempArray;
