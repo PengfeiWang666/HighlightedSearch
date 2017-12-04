@@ -28,6 +28,9 @@ static NSString *kResultCellIdentifier = @"kResultCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 解决 UITableViewWrapperView下移64pt问题
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
