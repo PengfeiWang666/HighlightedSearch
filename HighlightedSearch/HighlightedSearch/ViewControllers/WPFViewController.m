@@ -111,18 +111,88 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
     [self.searchResultVC.resultDataSource removeAllObjects];
     
+    NSDate *beginTime = [NSDate date];
+    NSLog(@"开始匹配，开始时间：%@", beginTime);
+    
     // 遍历数据源，查看是否匹配，刷新结果列表
-    // 后期考虑优化遍历效率
-    for (NSInteger i = 0; i < self.dataSource.count; i++) {
-        WPFPerson *person = self.dataSource[i];
+    
+    
+    /**
+     2017-12-04 18:16:54.695185 HighlightedSearch[3799:1778862] W
+     2017-12-04 18:16:54.695585 HighlightedSearch[3799:1778862] 开始匹配，开始时间：2017-12-04 10:16:54 +0000
+     2017-12-04 18:16:54.709602 HighlightedSearch[3799:1778862] 匹配结束，结束时间：2017-12-04 10:16:54 +0000，耗时：0.0142
+     2017-12-04 18:16:55.106787 HighlightedSearch[3799:1778862] Wa
+     2017-12-04 18:16:55.107167 HighlightedSearch[3799:1778862] 开始匹配，开始时间：2017-12-04 10:16:55 +0000
+     2017-12-04 18:16:55.124627 HighlightedSearch[3799:1778862] 匹配结束，结束时间：2017-12-04 10:16:55 +0000，耗时：0.0175
+     2017-12-04 18:16:55.422478 HighlightedSearch[3799:1778862] Wan
+     2017-12-04 18:16:55.422841 HighlightedSearch[3799:1778862] 开始匹配，开始时间：2017-12-04 10:16:55 +0000
+     2017-12-04 18:16:55.442540 HighlightedSearch[3799:1778862] 匹配结束，结束时间：2017-12-04 10:16:55 +0000，耗时：0.0197
+     2017-12-04 18:16:55.643298 HighlightedSearch[3799:1778862] Wang
+     2017-12-04 18:16:55.643666 HighlightedSearch[3799:1778862] 开始匹配，开始时间：2017-12-04 10:16:55 +0000
+     2017-12-04 18:16:55.666194 HighlightedSearch[3799:1778862] 匹配结束，结束时间：2017-12-04 10:16:55 +0000，耗时：0.0226
+     */
+//    for (NSInteger i = 0; i < self.dataSource.count; i++) {
+    
+    /**
+     2017-12-04 18:16:06.527385 HighlightedSearch[3796:1778484] W
+     2017-12-04 18:16:06.527852 HighlightedSearch[3796:1778484] 开始匹配，开始时间：2017-12-04 10:16:06 +0000
+     2017-12-04 18:16:06.544939 HighlightedSearch[3796:1778484] 匹配结束，结束时间：2017-12-04 10:16:06 +0000，耗时：0.0172
+     2017-12-04 18:16:06.924011 HighlightedSearch[3796:1778484] Wa
+     2017-12-04 18:16:06.924368 HighlightedSearch[3796:1778484] 开始匹配，开始时间：2017-12-04 10:16:06 +0000
+     2017-12-04 18:16:06.942735 HighlightedSearch[3796:1778484] 匹配结束，结束时间：2017-12-04 10:16:06 +0000，耗时：0.0184
+     2017-12-04 18:16:07.305103 HighlightedSearch[3796:1778484] Wan
+     2017-12-04 18:16:07.305645 HighlightedSearch[3796:1778484] 开始匹配，开始时间：2017-12-04 10:16:07 +0000
+     2017-12-04 18:16:07.326988 HighlightedSearch[3796:1778484] 匹配结束，结束时间：2017-12-04 10:16:07 +0000，耗时：0.0216
+     2017-12-04 18:16:07.635750 HighlightedSearch[3796:1778484] Wang
+     2017-12-04 18:16:07.636109 HighlightedSearch[3796:1778484] 开始匹配，开始时间：2017-12-04 10:16:07 +0000
+     2017-12-04 18:16:07.654624 HighlightedSearch[3796:1778484] 匹配结束，结束时间：2017-12-04 10:16:07 +0000，耗时：0.0185
+     */
+//    for (WPFPerson *person in self.dataSource) {
+    
+    /**
+     2017-12-04 18:24:40.126644 HighlightedSearch[3807:1780388] W
+     2017-12-04 18:24:40.127213 HighlightedSearch[3807:1780388] 开始匹配，开始时间：2017-12-04 10:24:40 +0000
+     2017-12-04 18:24:40.137254 HighlightedSearch[3807:1780388] 匹配结束，结束时间：2017-12-04 10:24:40 +0000，耗时：0.0103
+     2017-12-04 18:24:40.741455 HighlightedSearch[3807:1780388] Wa
+     2017-12-04 18:24:40.741817 HighlightedSearch[3807:1780388] 开始匹配，开始时间：2017-12-04 10:24:40 +0000
+     2017-12-04 18:24:40.763300 HighlightedSearch[3807:1780388] 匹配结束，结束时间：2017-12-04 10:24:40 +0000，耗时：0.0215
+     2017-12-04 18:24:41.221052 HighlightedSearch[3807:1780388] Wan
+     2017-12-04 18:24:41.221399 HighlightedSearch[3807:1780388] 开始匹配，开始时间：2017-12-04 10:24:41 +0000
+     2017-12-04 18:24:41.238155 HighlightedSearch[3807:1780388] 匹配结束，结束时间：2017-12-04 10:24:41 +0000，耗时：0.0167
+     2017-12-04 18:24:41.706267 HighlightedSearch[3807:1780388] Wang
+     2017-12-04 18:24:41.706618 HighlightedSearch[3807:1780388] 开始匹配，开始时间：2017-12-04 10:24:41 +0000
+     2017-12-04 18:24:41.729658 HighlightedSearch[3807:1780388] 匹配结束，结束时间：2017-12-04 10:24:41 +0000，耗时：0.0231
+     */
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_apply(self.dataSource.count, queue, ^(size_t index) {
+    
+    /**
+     2017-12-04 18:20:01.484445 HighlightedSearch[3803:1779424] W
+     2017-12-04 18:20:01.484974 HighlightedSearch[3803:1779424] 开始匹配，开始时间：2017-12-04 10:20:01 +0000
+     2017-12-04 18:20:01.498849 HighlightedSearch[3803:1779424] 匹配结束，结束时间：2017-12-04 10:20:01 +0000，耗时：0.0140
+     2017-12-04 18:20:01.805866 HighlightedSearch[3803:1779424] Wa
+     2017-12-04 18:20:01.806300 HighlightedSearch[3803:1779424] 开始匹配，开始时间：2017-12-04 10:20:01 +0000
+     2017-12-04 18:20:01.819802 HighlightedSearch[3803:1779424] 匹配结束，结束时间：2017-12-04 10:20:01 +0000，耗时：0.0135
+     2017-12-04 18:20:02.113918 HighlightedSearch[3803:1779424] Wan
+     2017-12-04 18:20:02.114341 HighlightedSearch[3803:1779424] 开始匹配，开始时间：2017-12-04 10:20:02 +0000
+     2017-12-04 18:20:02.128279 HighlightedSearch[3803:1779424] 匹配结束，结束时间：2017-12-04 10:20:02 +0000，耗时：0.0139
+     2017-12-04 18:20:02.313866 HighlightedSearch[3803:1779424] Wang
+     2017-12-04 18:20:02.314241 HighlightedSearch[3803:1779424] 开始匹配，开始时间：2017-12-04 10:20:02 +0000
+     2017-12-04 18:20:02.329085 HighlightedSearch[3803:1779424] 匹配结束，结束时间：2017-12-04 10:20:02 +0000，耗时：0.0148
+     */
+    
+    [self.dataSource enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    
+//        WPFPerson *person = self.dataSource[index];
+        WPFPerson *person = (WPFPerson *)obj;
         
         WPFSearchResultModel *resultModel = [WPFPinYinTools
                                              searchEffectiveResultWithSearchString:searchController.searchBar.text.lowercaseString
-                                                   nameString:person.name
+                                             nameString:person.name
                                              completeSpelling:person.completeSpelling
-                                                initialString:person.initialString
-                                         pinyinLocationString:person.pinyinLocationString
-                                        initialLocationString:person.initialLocationString];
+                                             initialString:person.initialString
+                                             pinyinLocationString:person.pinyinLocationString
+                                             initialLocationString:person.initialLocationString];
         
         if (resultModel.highlightRang.length) {
             person.highlightLoaction = resultModel.highlightRang.location;
@@ -130,9 +200,14 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
             person.matchType = resultModel.matchType;
             [self.searchResultVC.resultDataSource addObject:person];
         }
-    }
+    }];
+//    });
     
     [self.searchResultVC.resultDataSource sortUsingDescriptors:[WPFPinYinTools sortingRules]];
+    
+    NSDate *endTime = [NSDate date];
+    NSTimeInterval costTime = [endTime timeIntervalSinceDate:beginTime];
+    NSLog(@"匹配结束，结束时间：%@，耗时：%.4f", endTime, costTime);
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.searchResultVC.tableView reloadData];
