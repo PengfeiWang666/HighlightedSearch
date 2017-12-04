@@ -30,7 +30,7 @@ static NSString *kResultCellIdentifier = @"kResultCellIdentifier";
     // Do any additional setup after loading the view.
     
     // 解决 UITableViewWrapperView下移64pt问题
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
