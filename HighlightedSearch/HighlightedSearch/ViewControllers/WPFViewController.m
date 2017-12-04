@@ -64,11 +64,11 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 16:21:13.154809+0800 HighlightedSearch[87755:10572526] 数据解析完毕！
      */
     [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        @autoreleasepool {
+//        @autoreleasepool {
             //            NSString *name = personArray[i];
             WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
             [tempArray addObject:person];
-        }
+//        }
     }];
     
     NSLog(@"数据解析完毕！");
