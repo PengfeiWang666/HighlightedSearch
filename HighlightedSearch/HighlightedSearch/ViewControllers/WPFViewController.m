@@ -52,7 +52,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 16:53:10.034389 HighlightedSearch[3679:1755567] 开始解析数据了，数据条数：547
      2017-12-04 16:53:10.283026 HighlightedSearch[3679:1755567] 数据解析完毕！
      */
-    for (NSInteger i = 0; i < personArray.count; ++i) {
+//    for (NSInteger i = 0; i < personArray.count; ++i) {
     
     /** 耗时0.278秒
      2017-12-04 16:50:10.360442 HighlightedSearch[3664:1754291] 开始解析数据了，数据条数：547
@@ -65,14 +65,13 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 16:47:53.564198 HighlightedSearch[3657:1753487] 数据解析完毕！
      */
     // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
-//    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        @autoreleasepool {
-                        NSString *name = personArray[i];
-            WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
+    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        @autoreleasepool {
+//                        NSString *name = personArray[i];
+            WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
             [tempArray addObject:person];
-        }
-    }
-//    }];
+//        }
+    }];
     
     NSLog(@"数据解析完毕！");
     self.dataSource = tempArray;
