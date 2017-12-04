@@ -63,6 +63,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 16:21:13.108658+0800 HighlightedSearch[87755:10572526] 开始解析数据了，数据条数：547
      2017-12-04 16:21:13.154809+0800 HighlightedSearch[87755:10572526] 数据解析完毕！
      */
+    // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
     [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //        @autoreleasepool {
             //            NSString *name = personArray[i];
