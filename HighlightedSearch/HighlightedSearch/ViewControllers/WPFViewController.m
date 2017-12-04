@@ -46,13 +46,30 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
     NSMutableArray *tempArray = [NSMutableArray array];
     NSLog(@"开始解析数据了，数据条数：%ld", (unsigned long)personArray.count);
-    for (NSInteger i = 0; i < personArray.count; ++i) {
+    
+    /** 耗时 0.0862秒
+     2017-12-04 16:26:55.133029+0800 HighlightedSearch[87833:10581129] 开始解析数据了，数据条数：547
+     2017-12-04 16:26:55.219175+0800 HighlightedSearch[87833:10581129] 数据解析完毕！
+     */
+//    for (NSInteger i = 0; i < personArray.count; ++i) {
+    
+    /** 耗时0.088秒
+     2017-12-04 16:24:33.293051+0800 HighlightedSearch[87790:10577240] 开始解析数据了，数据条数：547
+     2017-12-04 16:24:33.381268+0800 HighlightedSearch[87790:10577240] 数据解析完毕！
+     */
+//    for (NSString *name in personArray) {
+    
+    /** 耗时 0.046秒
+     2017-12-04 16:21:13.108658+0800 HighlightedSearch[87755:10572526] 开始解析数据了，数据条数：547
+     2017-12-04 16:21:13.154809+0800 HighlightedSearch[87755:10572526] 数据解析完毕！
+     */
+    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @autoreleasepool {
-            NSString *name = personArray[i];
-            WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
+            //            NSString *name = personArray[i];
+            WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
             [tempArray addObject:person];
         }
-    }
+    }];
     
     NSLog(@"数据解析完毕！");
     self.dataSource = tempArray;
