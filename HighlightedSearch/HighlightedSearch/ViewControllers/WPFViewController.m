@@ -106,7 +106,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 #pragma mark - UISearchResultsUpdating
 // 更新搜索结果
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
-    NSLog(@"%@", searchController.searchBar.text);
+    NSString *keyWord = searchController.searchBar.text.lowercaseString;
+    NSLog(@"%@", keyWord);
     
     [self.searchResultVC.resultDataSource removeAllObjects];
     
@@ -185,7 +186,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         WPFPerson *person = (WPFPerson *)obj;
         
         WPFSearchResultModel *resultModel = [WPFPinYinTools
-                                             searchEffectiveResultWithSearchString:searchController.searchBar.text.lowercaseString
+                                             searchEffectiveResultWithSearchString:keyWord
                                              nameString:person.name
                                              completeSpelling:person.completeSpelling
                                              initialString:person.initialString
