@@ -114,15 +114,15 @@
     // MARK: 拼音首字母匹配
     if (initialRange.length!=0) {
         NSInteger currentLocation = [pinyinFirstLetterLocationArray[initialRange.location] integerValue];
+        NSInteger highlightedLength;
         if (initialRange.location ==0) {
+            highlightedLength = [pinyinFirstLetterLocationArray[initialRange.length-1] integerValue]-currentLocation +1;
             // 拼音首字母匹配从0开始，即搜索的关键字与该数据源第一个汉字匹配到，所以高亮范围从0开始
-            highlightedRange = NSMakeRange(0, [pinyinFirstLetterLocationArray[initialRange.length-1] integerValue]-currentLocation +1);
+            highlightedRange = NSMakeRange(0, highlightedLength);
         } else {
-            NSInteger lastLocation = [pinyinFirstLetterLocationArray[initialRange.location - 1] integerValue];
-            // 拼音首字母匹配
-            if (currentLocation != lastLocation) {
-                highlightedRange = NSMakeRange(currentLocation, [pinyinFirstLetterLocationArray[initialRange.length+initialRange.location-1] integerValue]-currentLocation +1);
-            }
+            highlightedLength = [pinyinFirstLetterLocationArray[initialRange.length+initialRange.location-1] integerValue]-currentLocation +1;
+            // 高亮范围从匹配到的第一个关键字开始
+            highlightedRange = NSMakeRange(currentLocation, highlightedLength);
         }
         searchModel.highlightedRange = highlightedRange;
         searchModel.matchType = MatchTypeInitial;
