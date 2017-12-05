@@ -98,7 +98,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 - (void)settingNavigationItemBarButtons:(BOOL)searchBarIsExpand {
     if (searchBarIsExpand) {
         
-        
     } else {
        
     }
@@ -115,7 +114,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     NSLog(@"开始匹配，开始时间：%@", beginTime);
     
     // 遍历数据源，查看是否匹配，刷新结果列表
-    
     
     /**
      2017-12-04 18:16:54.695185 HighlightedSearch[3799:1778862] W
@@ -212,8 +210,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.searchResultVC.tableView reloadData];
     });
-    
-    
 }
 
 #pragma mark  UISearchControllerDelegate
