@@ -192,9 +192,9 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
                                              pinyinLocationString:person.pinyinLocationString
                                              initialLocationString:person.initialLocationString];
         
-        if (resultModel.highlightRang.length) {
-            person.highlightLoaction = resultModel.highlightRang.location;
-            person.textRange = resultModel.highlightRang;
+        if (resultModel.highlightedRange.length) {
+            person.highlightLoaction = resultModel.highlightedRange.location;
+            person.textRange = resultModel.highlightedRange;
             person.matchType = resultModel.matchType;
             [self.searchResultVC.resultDataSource addObject:person];
         }

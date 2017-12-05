@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, MatchType) {
 @interface WPFSearchResultModel : NSObject
 
 /** 高亮范围 */
-@property (nonatomic, assign) NSRange highlightRang;
+@property (nonatomic, assign) NSRange highlightedRange;
 /** 匹配类型 */
 @property (nonatomic, assign) MatchType matchType;
 
