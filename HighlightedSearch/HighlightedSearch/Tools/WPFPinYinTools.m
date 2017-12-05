@@ -77,24 +77,31 @@
     // 拼音首字母匹配范围
     NSRange initialRange = [initialString rangeOfString:searchStrLower];
     
-    // 完全匹配
+    // 汉字直接匹配
     if (chineseRange.length!=0) {
         searchModel.highlightedRange = chineseRange;
         searchModel.matchType = MatchTypeChinese;
         return searchModel;
     }
+    
     NSRange highlightedRange = NSMakeRange(0, 0);
     
-    // 拼音全拼匹配
-    if (complateRange.length!=0) {
-        if (complateRange.location ==0) {
-            // MARK: 拼音首字母匹配从0开始
+    // MARK: 拼音全拼匹配
+    if (complateRange.length != 0) {
+        if (complateRange.location == 0) {
+            // 拼音首字母匹配从0开始，即搜索的关键字与该数据源第一个汉字匹配到，所以高亮范围从0开始
             highlightedRange = NSMakeRange(0, [completeSpellingArray[complateRange.length-1] integerValue] +1);
             
         } else {
-            if ([completeSpellingArray[complateRange.location] integerValue] != [completeSpellingArray[complateRange.location-1] integerValue]) {
-                // MARK: 拼音全拼匹配
-                highlightedRange = NSMakeRange([completeSpellingArray[complateRange.location] integerValue], [completeSpellingArray[complateRange.length+complateRange.location -1] integerValue] - [completeSpellingArray[complateRange.location] integerValue] +1);
+            /** 如果该拼音字符是一个汉字的首个字符，如搜索“g”，
+             *  就要匹配出“gai”、“ge”等“g”开头的拼音对应的字符，
+             *  而不应该匹配到“wang”、“feng”等非”g“开头的拼音对应的字符
+             */
+            NSInteger currentLocation = [completeSpellingArray[complateRange.location] integerValue];
+            NSInteger lastLocation = [completeSpellingArray[complateRange.location-1] integerValue];
+            if (currentLocation != lastLocation) {
+                // 高亮范围从匹配到的第一个关键字开始
+                highlightedRange = NSMakeRange(currentLocation, [completeSpellingArray[complateRange.length+complateRange.location -1] integerValue] - currentLocation +1);
             }
         }
         searchModel.highlightedRange = highlightedRange;
@@ -104,15 +111,17 @@
         }
     }
     
-    // 拼音首字母匹配
+    // MARK: 拼音首字母匹配
     if (initialRange.length!=0) {
+        NSInteger currentLocation = [pinyinFirstLetterLocationArray[initialRange.location] integerValue];
         if (initialRange.location ==0) {
-            // MARK: 拼音首字母匹配从0开始
-            highlightedRange = NSMakeRange(0, [pinyinFirstLetterLocationArray[initialRange.length-1] integerValue]-[pinyinFirstLetterLocationArray[initialRange.location] integerValue] +1);
+            // 拼音首字母匹配从0开始，即搜索的关键字与该数据源第一个汉字匹配到，所以高亮范围从0开始
+            highlightedRange = NSMakeRange(0, [pinyinFirstLetterLocationArray[initialRange.length-1] integerValue]-currentLocation +1);
         } else {
-            // MARK: 拼音首字母匹配
-            if ([pinyinFirstLetterLocationArray[initialRange.location] integerValue] != [pinyinFirstLetterLocationArray[initialRange.location - 1] integerValue]) {
-                highlightedRange = NSMakeRange([pinyinFirstLetterLocationArray[initialRange.location] integerValue], [pinyinFirstLetterLocationArray[initialRange.length+initialRange.location-1] integerValue]-[pinyinFirstLetterLocationArray[initialRange.location] integerValue] +1);
+            NSInteger lastLocation = [pinyinFirstLetterLocationArray[initialRange.location - 1] integerValue];
+            // 拼音首字母匹配
+            if (currentLocation != lastLocation) {
+                highlightedRange = NSMakeRange(currentLocation, [pinyinFirstLetterLocationArray[initialRange.length+initialRange.location-1] integerValue]-currentLocation +1);
             }
         }
         searchModel.highlightedRange = highlightedRange;
