@@ -16,3 +16,6 @@ Demo 效果如图所示
   * 简拼相关："l"、"y"、"f"、"ly"、"yf"、"lyf" 
   * 全拼相关："li"、"liu"、"liuy"、"liuyi"、"liuyif"、"liuyife"、"liuyifei"、"yi"、"yif"、"yife"、"yifei"、"fe"、"fei"
 * 拼音的重难点还包括：比如搜索关键字为“xian”，既要匹配出“先”，也要匹配出“西安”
+
+代码细节讲解
+[]()
