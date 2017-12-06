@@ -63,24 +63,24 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      */
     // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
 //    NSLog(@"personArray-->%p", personArray);
-    dispatch_queue_t queue = dispatch_queue_create("wpf.initialize.test", DISPATCH_QUEUE_SERIAL);
-    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//    dispatch_queue_t queue = dispatch_queue_create("wpf.initialize.test", DISPATCH_QUEUE_SERIAL);
+//    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     
     /** 耗时0.428
      2017-12-06 11:51:17.994211 HighlightedSearch[4387:1867649] 开始解析数据了，开始时间：2017-12-06 03:51:17 +0000，数据条数：1006
      2017-12-06 11:51:19.064917 HighlightedSearch[4387:1867649] 解析结束，结束时间：2017-12-06 03:51:19 +0000，耗时：1.0728 秒
      */
-//    for (NSString *name in personArray) {
-//        @autoreleasepool {
+    for (NSString *name in personArray) {
+        @autoreleasepool {
 //                        NSString *name = personArray[i];
-        WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
-        dispatch_async(queue, ^{
+        WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
+//        dispatch_async(queue, ^{
             [tempArray addObject:person];
-        });
+//        });
     
-//        }
-//        }
-    }];
+        }
+        }
+//    }];
     
     NSDate *endTime = [NSDate date];
     NSTimeInterval costTime = [endTime timeIntervalSinceDate:beginTime];
