@@ -45,41 +45,46 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
     NSMutableArray *tempArray = [NSMutableArray array];
-    NSLog(@"开始解析数据了，数据条数：%ld", (unsigned long)personArray.count);
+    NSDate *beginTime = [NSDate date];
+    NSLog(@"开始解析数据了，开始时间：%@，数据条数：%ld", beginTime, (unsigned long)personArray.count);
     
     // 以下测试数据均为 iPhone SE（10.2） 真机测试
-    /** 耗时 0.249秒
-     2017-12-04 16:53:10.034389 HighlightedSearch[3679:1755567] 开始解析数据了，数据条数：547
-     2017-12-04 16:53:10.283026 HighlightedSearch[3679:1755567] 数据解析完毕！
+    /**
+     2017-12-06 11:52:08.656280 HighlightedSearch[4397:1868099] 开始解析数据了，开始时间：2017-12-06 03:52:08 +0000，数据条数：1006
+     2017-12-06 11:52:09.683399 HighlightedSearch[4397:1868099] 解析结束，结束时间：2017-12-06 03:52:09 +0000，耗时：1.0291 秒
      */
 //    for (NSInteger i = 0; i < personArray.count; ++i) {
     
-    /** 耗时0.278秒
-     2017-12-04 16:50:10.360442 HighlightedSearch[3664:1754291] 开始解析数据了，数据条数：547
-     2017-12-04 16:50:10.638785 HighlightedSearch[3664:1754291] 数据解析完毕！
-     */
-//    for (NSString *name in personArray) {
     
-    /** 耗时 0.157秒
-     2017-12-04 16:47:53.417648 HighlightedSearch[3657:1753487] 开始解析数据了，数据条数：547
-     2017-12-04 16:47:53.564198 HighlightedSearch[3657:1753487] 数据解析完毕！
+    
+    /**
+     2017-12-06 11:53:51.251045 HighlightedSearch[4407:1868685] 开始解析数据了，开始时间：2017-12-06 03:53:51 +0000，数据条数：1006
+     2017-12-06 11:53:53.052466 HighlightedSearch[4407:1868685] 解析结束，结束时间：2017-12-06 03:53:53 +0000，耗时：1.8038 秒
      */
     // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
 //    NSLog(@"personArray-->%p", personArray);
     dispatch_queue_t queue = dispatch_queue_create("wpf.initialize.test", DISPATCH_QUEUE_SERIAL);
     [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    
+    /** 耗时0.428
+     2017-12-06 11:51:17.994211 HighlightedSearch[4387:1867649] 开始解析数据了，开始时间：2017-12-06 03:51:17 +0000，数据条数：1006
+     2017-12-06 11:51:19.064917 HighlightedSearch[4387:1867649] 解析结束，结束时间：2017-12-06 03:51:19 +0000，耗时：1.0728 秒
+     */
+//    for (NSString *name in personArray) {
 //        @autoreleasepool {
 //                        NSString *name = personArray[i];
         WPFPerson *person = [WPFPerson personWithName:obj hanyuPinyinOutputFormat:pinyinFormat];
         dispatch_async(queue, ^{
             [tempArray addObject:person];
         });
-        
-
+    
+//        }
 //        }
     }];
     
-    NSLog(@"数据解析完毕！");
+    NSDate *endTime = [NSDate date];
+    NSTimeInterval costTime = [endTime timeIntervalSinceDate:beginTime];
+    NSLog(@"解析结束，结束时间：%@，耗时：%.4f 秒", endTime, costTime);
     self.dataSource = tempArray;
 }
 
@@ -98,15 +103,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     return YES;
 }
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
-    [self settingNavigationItemBarButtons:NO];
-}
-
-- (void)settingNavigationItemBarButtons:(BOOL)searchBarIsExpand {
-    if (searchBarIsExpand) {
-        
-    } else {
-       
-    }
+    
 }
 
 #pragma mark - UISearchResultsUpdating
