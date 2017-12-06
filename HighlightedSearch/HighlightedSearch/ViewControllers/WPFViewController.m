@@ -135,21 +135,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      */
 //    for (NSInteger i = 0; i < self.dataSource.count; i++) {
     
-    /**
-     2017-12-06 12:00:38.217187 HighlightedSearch[4439:1870645] w
-     2017-12-06 12:00:38.217575 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
-     2017-12-06 12:00:38.253997 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0364
-     2017-12-06 12:00:38.616430 HighlightedSearch[4439:1870645] wa
-     2017-12-06 12:00:38.616807 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
-     2017-12-06 12:00:38.654969 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0383
-     2017-12-06 12:00:38.948700 HighlightedSearch[4439:1870645] wan
-     2017-12-06 12:00:38.949453 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
-     2017-12-06 12:00:38.986892 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0378
-     2017-12-06 12:00:39.280979 HighlightedSearch[4439:1870645] wang
-     2017-12-06 12:00:39.281563 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:39 +0000
-     2017-12-06 12:00:39.317743 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:39 +0000，耗时：0.0365
-     */
-    for (WPFPerson *person in self.dataSource) {
     
     /**
      2017-12-06 11:56:55.565738 HighlightedSearch[4419:1869486] w
@@ -187,6 +172,22 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //    dispatch_queue_t queue = dispatch_queue_create("wpf.updateSearchResults.test", DISPATCH_QUEUE_SERIAL);
 //    [self.dataSource enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     
+    /**
+     2017-12-06 12:00:38.217187 HighlightedSearch[4439:1870645] w
+     2017-12-06 12:00:38.217575 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
+     2017-12-06 12:00:38.253997 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0364
+     2017-12-06 12:00:38.616430 HighlightedSearch[4439:1870645] wa
+     2017-12-06 12:00:38.616807 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
+     2017-12-06 12:00:38.654969 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0383
+     2017-12-06 12:00:38.948700 HighlightedSearch[4439:1870645] wan
+     2017-12-06 12:00:38.949453 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:38 +0000
+     2017-12-06 12:00:38.986892 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:38 +0000，耗时：0.0378
+     2017-12-06 12:00:39.280979 HighlightedSearch[4439:1870645] wang
+     2017-12-06 12:00:39.281563 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:39 +0000
+     2017-12-06 12:00:39.317743 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:39 +0000，耗时：0.0365
+     */
+    for (WPFPerson *person in self.dataSource) {
+    
 //        WPFPerson *person = self.dataSource[i];
 //        WPFPerson *person = (WPFPerson *)obj;
         
@@ -210,7 +211,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //    });
     }
 
-    self.searchResultVC.resultDataSource = [NSMutableArray arrayWithArray:resultDataSource];
+    self.searchResultVC.resultDataSource = resultDataSource;
     
     [self.searchResultVC.resultDataSource sortUsingDescriptors:[WPFPinYinTools sortingRules]];
     
