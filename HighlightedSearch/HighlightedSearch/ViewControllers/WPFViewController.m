@@ -44,7 +44,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     // 赋值
     HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
-    __block NSMutableArray *tempArray = [NSMutableArray array];
+    NSMutableArray *tempArray = [NSMutableArray array];
     NSLog(@"开始解析数据了，数据条数：%ld", (unsigned long)personArray.count);
     
     // 以下测试数据均为 iPhone SE（10.2） 真机测试
@@ -65,8 +65,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 16:47:53.564198 HighlightedSearch[3657:1753487] 数据解析完毕！
      */
     // 使用容器的block版本的枚举器时，内部会自动添加一个AutoreleasePool：
-//    NSArray *array = [NSArray arrayWithArray:personArray];
-    NSLog(@"personArray-->%p", personArray);
+//    NSLog(@"personArray-->%p", personArray);
     dispatch_queue_t queue = dispatch_queue_create("wpf.initialize.test", DISPATCH_QUEUE_SERIAL);
     [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //        @autoreleasepool {
@@ -114,9 +113,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 // 更新搜索结果
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSString *keyWord = searchController.searchBar.text.lowercaseString;
-    NSLog(@"%@", keyWord);
-    
-    [self.searchResultVC.resultDataSource removeAllObjects];
     
     NSDate *beginTime = [NSDate date];
     NSLog(@"开始匹配，开始时间：%@", beginTime);
@@ -186,10 +182,10 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-04 18:20:02.314241 HighlightedSearch[3803:1779424] 开始匹配，开始时间：2017-12-04 10:20:02 +0000
      2017-12-04 18:20:02.329085 HighlightedSearch[3803:1779424] 匹配结束，结束时间：2017-12-04 10:20:02 +0000，耗时：0.0148
      */
-    __block NSMutableArray *resultDataSource = [NSMutableArray array];
-    NSArray *array = [NSArray arrayWithArray:self.dataSource];
+    NSMutableArray *resultDataSource = [NSMutableArray array];
+    
     dispatch_queue_t queue = dispatch_queue_create("wpf.updateSearchResults.test", DISPATCH_QUEUE_SERIAL);
-    [array enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.dataSource enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     
 //        WPFPerson *person = self.dataSource[index];
         WPFPerson *person = (WPFPerson *)obj;
