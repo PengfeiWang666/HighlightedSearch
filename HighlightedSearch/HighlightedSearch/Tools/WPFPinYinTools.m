@@ -7,6 +7,7 @@
 //
 
 #import "WPFPinYinTools.h"
+#import "WPFPerson.h"
 
 @implementation WPFSearchResultModel
 
@@ -56,6 +57,35 @@
      */
     [pinyinFormat setVCharType:VCharTypeWithV];
     return pinyinFormat;
+}
+
++ (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
+                                                         Person:(WPFPerson *)person {
+    WPFSearchResultModel *resultModel = [self
+                                         searchEffectiveResultWithSearchString:searchStrLower
+                                         nameString:person.name
+                                         completeSpelling:person.completeSpelling
+                                         initialString:person.initialString
+                                         pinyinLocationString:person.pinyinLocationString
+                                         initialLocationString:person.initialLocationString];
+    
+    if (resultModel.highlightedRange.length) {
+        return resultModel;
+
+    } else if (person.isContainPolyPhone) {
+        // 如果正常匹配没有对应结果，且该model存在多音字，则尝试多音字匹配
+        resultModel = [WPFPinYinTools
+                       searchEffectiveResultWithSearchString:searchStrLower
+                       nameString:person.name
+                       completeSpelling:person.polyPhoneCompleteSpelling
+                       initialString:person.polyPhoneInitialString
+                       pinyinLocationString:person.polyPhonePinyinLocationString
+                       initialLocationString:person.initialLocationString];
+        if (resultModel.highlightedRange.length) {
+            return resultModel;
+        }
+    }
+    return nil;
 }
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower

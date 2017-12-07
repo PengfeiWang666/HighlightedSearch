@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import "PinYin4Objc.h"
 
+@class WPFPerson;
+
 typedef NS_ENUM(NSUInteger, MatchType) {
     MatchTypeChinese,  // 中文完全匹配
     MatchTypeComplate, // 拼音全拼匹配
@@ -38,11 +40,8 @@ typedef NS_ENUM(NSUInteger, MatchType) {
 + (HanyuPinyinOutputFormat *)getOutputFormat;
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
-                                                     nameString:(NSString *)nameStrStrLower
-                                               completeSpelling:(NSString *)completeSpelling
-                                                  initialString:(NSString *)initialString
-                                           pinyinLocationString:(NSString *)pinyinLocationString
-                                          initialLocationString:(NSString *)initialLocationString;
+                                                         Person:(WPFPerson *)person;
+
 /** 排序规则 */
 + (NSArray *)sortingRules;
 

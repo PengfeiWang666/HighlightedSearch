@@ -191,13 +191,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //        WPFPerson *person = self.dataSource[i];
 //        WPFPerson *person = (WPFPerson *)obj;
         
-        WPFSearchResultModel *resultModel = [WPFPinYinTools
-                                             searchEffectiveResultWithSearchString:keyWord
-                                             nameString:person.name
-                                             completeSpelling:person.completeSpelling
-                                             initialString:person.initialString
-                                             pinyinLocationString:person.pinyinLocationString
-                                             initialLocationString:person.initialLocationString];
+        WPFSearchResultModel *resultModel = [WPFPinYinTools searchEffectiveResultWithSearchString:keyWord Person:person];
         
         if (resultModel.highlightedRange.length) {
             person.highlightLoaction = resultModel.highlightedRange.location;
@@ -206,21 +200,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //            dispatch_async(queue, ^{
                 [resultDataSource addObject:person];
 //            });
-        } else if (person.isContainPolyPhone) {
-            // 如果正常匹配没有对应结果，且该model存在多音字，则尝试多音字匹配
-            resultModel = [WPFPinYinTools
-                           searchEffectiveResultWithSearchString:keyWord
-                           nameString:person.name
-                           completeSpelling:person.polyPhoneCompleteSpelling
-                           initialString:person.polyPhoneInitialString
-                           pinyinLocationString:person.polyPhonePinyinLocationString
-                           initialLocationString:person.initialLocationString];
-            if (resultModel.highlightedRange.length) {
-                person.highlightLoaction = resultModel.highlightedRange.location;
-                person.textRange = resultModel.highlightedRange;
-                person.matchType = resultModel.matchType;
-                [resultDataSource addObject:person];
-            }
         }
 //    }];
 //    });
