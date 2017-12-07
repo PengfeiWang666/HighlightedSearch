@@ -71,23 +71,23 @@
                 // 多音字的处理
                 if (person.isContainPolyPhone) {
                     // 获取该字符多音字的第一个拼音字母
-                    NSString *polyPhoneFirstLetter = [polyPhonePinyinStrOfChar substringToIndex:1];
+                    NSString *targetStringOfChar = isPolyPhoneChar ? polyPhonePinyinStrOfChar : mainPinyinStrOfChar;
+                    NSString *targetFirstLetter = [targetStringOfChar substringToIndex:1];
                     
                     //                NSString *pinyinString = [PinyinHelper toHanyuPinyinStringWithNSString:hanyuChar withHanyuPinyinOutputFormat:pinyinFormat withNSString:@""];
-                    /** 获取该字符的拼音在整个字符串中的位置，如 "wang peng fei"
-                     * "wang" 对应的四个拼音字母是 0,0,0,0,
-                     * "peng" 对应的四个拼音字母是 1,1,1,1
-                     * "fei"  对应的三个拼音字母是 2,2,2
-                     */
-                    for (NSInteger j= 0 ;j < polyPhonePinyinStrOfChar.length ; j++) {
-                        [polyPhoneCompleteSpellingArray addObject:@(i)];/////////
+                    /** 获取该 多音字 字符的拼音在整个字符串中的位置 */
+                    
+                    for (NSInteger j= 0 ;j < targetStringOfChar.length ; j++) {
+                        if (!polyPhoneCompleteSpellingArray.count) {
+                            polyPhoneCompleteSpellingArray = [completeSpellingArray mutableCopy];
+                        }
+                        [polyPhoneCompleteSpellingArray addObject:@(i)];
                     }
                     // 拼接 多音字 首字母字符串
-                    NSString *appendString = isPolyPhoneChar ? polyPhoneFirstLetter : firstLetter;
                     if (polyPhoneInitialString.length) {
-                        polyPhoneInitialString = [polyPhoneInitialString stringByAppendingString:appendString];
+                        polyPhoneInitialString = [polyPhoneInitialString stringByAppendingString:targetFirstLetter];
                     } else {
-                        polyPhoneInitialString = [initialString stringByAppendingString:appendString];
+                        polyPhoneInitialString = [initialString stringByAppendingString:targetFirstLetter];
                     }
                     
                     // 拼接 多音字 首字母位置字符串
