@@ -41,7 +41,8 @@
 /** 第二个多音字 拼音全拼（小写）位置 */
 @property (nonatomic, copy) NSString *polyPhonePinyinLocationString;
 /** 第二个多音字 拼音首字母拼音（小写）数组字符串位置 */
-@property (nonatomic, copy) NSString *polyPhoneInitialLocationString;
+// 可以忽略掉，因为即使是多音字，简拼的定位是一定一样的
+//@property (nonatomic, copy) NSString *polyPhoneInitialLocationString;
 
 
 /**

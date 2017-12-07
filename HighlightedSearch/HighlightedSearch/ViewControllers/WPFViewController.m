@@ -66,7 +66,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //    dispatch_queue_t queue = dispatch_queue_create("wpf.initialize.test", DISPATCH_QUEUE_SERIAL);
 //    [personArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     
-    /** 耗时0.428
+    /**
      2017-12-06 11:51:17.994211 HighlightedSearch[4387:1867649] 开始解析数据了，开始时间：2017-12-06 03:51:17 +0000，数据条数：1006
      2017-12-06 11:51:19.064917 HighlightedSearch[4387:1867649] 解析结束，结束时间：2017-12-06 03:51:19 +0000，耗时：1.0728 秒
      */
@@ -206,6 +206,21 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 //            dispatch_async(queue, ^{
                 [resultDataSource addObject:person];
 //            });
+        } else if (person.isContainPolyPhone) {
+            // 如果正常匹配没有对应结果，且该model存在多音字，则尝试多音字匹配
+            resultModel = [WPFPinYinTools
+                           searchEffectiveResultWithSearchString:keyWord
+                           nameString:person.name
+                           completeSpelling:person.polyPhoneCompleteSpelling
+                           initialString:person.polyPhoneInitialString
+                           pinyinLocationString:person.polyPhonePinyinLocationString
+                           initialLocationString:person.initialLocationString];
+            if (resultModel.highlightedRange.length) {
+                person.highlightLoaction = resultModel.highlightedRange.location;
+                person.textRange = resultModel.highlightedRange;
+                person.matchType = resultModel.matchType;
+                [resultDataSource addObject:person];
+            }
         }
 //    }];
 //    });
