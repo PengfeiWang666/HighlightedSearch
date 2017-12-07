@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "358D8D5A1FC414D800FD5AAC"
-               BuildableName = "HighlightedSearch.app"
-               BlueprintName = "HighlightedSearch"
-               ReferencedContainer = "container:HighlightedSearch.xcodeproj">
+               BuildableName = "HighlightedSearchDemo.app"
+               BlueprintName = "HighlightedSearchDemo"
+               ReferencedContainer = "container:HighlightedSearchDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "358D8D5A1FC414D800FD5AAC"
-            BuildableName = "HighlightedSearch.app"
-            BlueprintName = "HighlightedSearch"
-            ReferencedContainer = "container:HighlightedSearch.xcodeproj">
+            BuildableName = "HighlightedSearchDemo.app"
+            BlueprintName = "HighlightedSearchDemo"
+            ReferencedContainer = "container:HighlightedSearchDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "358D8D5A1FC414D800FD5AAC"
-            BuildableName = "HighlightedSearch.app"
-            BlueprintName = "HighlightedSearch"
-            ReferencedContainer = "container:HighlightedSearch.xcodeproj">
+            BuildableName = "HighlightedSearchDemo.app"
+            BlueprintName = "HighlightedSearchDemo"
+            ReferencedContainer = "container:HighlightedSearchDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "358D8D5A1FC414D800FD5AAC"
-            BuildableName = "HighlightedSearch.app"
-            BlueprintName = "HighlightedSearch"
-            ReferencedContainer = "container:HighlightedSearch.xcodeproj">
+            BuildableName = "HighlightedSearchDemo.app"
+            BlueprintName = "HighlightedSearchDemo"
+            ReferencedContainer = "container:HighlightedSearchDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

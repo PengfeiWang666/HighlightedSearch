@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HighlightedSearch.xcodeproj">
+      location = "self:../HighlightedSearchDemo">
    </FileRef>
 </Workspace>

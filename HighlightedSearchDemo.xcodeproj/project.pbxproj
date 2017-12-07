@@ -42,7 +42,7 @@
 		355BEAEC1FC55F7100040E0F /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		355BEAF31FC5662C00040E0F /* WPFPinYinTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFPinYinTools.h; sourceTree = "<group>"; };
 		355BEAF41FC5662C00040E0F /* WPFPinYinTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFPinYinTools.m; sourceTree = "<group>"; };
-		358D8D5B1FC414D800FD5AAC /* HighlightedSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighlightedSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		358D8D5B1FC414D800FD5AAC /* HighlightedSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighlightedSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358D8D5E1FC414D800FD5AAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		358D8D5F1FC414D800FD5AAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		358D8D611FC414D800FD5AAC /* WPFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFViewController.h; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		358D8D521FC414D800FD5AAC = {
 			isa = PBXGroup;
 			children = (
-				358D8D5D1FC414D800FD5AAC /* HighlightedSearch */,
+				358D8D5D1FC414D800FD5AAC /* HighlightedSearchDemo */,
 				358D8D5C1FC414D800FD5AAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,12 +145,12 @@
 		358D8D5C1FC414D800FD5AAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				358D8D5B1FC414D800FD5AAC /* HighlightedSearch.app */,
+				358D8D5B1FC414D800FD5AAC /* HighlightedSearchDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		358D8D5D1FC414D800FD5AAC /* HighlightedSearch */ = {
+		358D8D5D1FC414D800FD5AAC /* HighlightedSearchDemo */ = {
 			isa = PBXGroup;
 			children = (
 				355BEAB51FC552D500040E0F /* 3rd */,
@@ -163,7 +163,7 @@
 				358D8D6C1FC414D800FD5AAC /* Info.plist */,
 				358D8D6D1FC414D800FD5AAC /* main.m */,
 			);
-			path = HighlightedSearch;
+			path = HighlightedSearchDemo;
 			sourceTree = "<group>";
 		};
 		358D8D741FC425A700FD5AAC /* Otherts */ = {
@@ -188,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		358D8D5A1FC414D800FD5AAC /* HighlightedSearch */ = {
+		358D8D5A1FC414D800FD5AAC /* HighlightedSearchDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 358D8D711FC414D800FD5AAC /* Build configuration list for PBXNativeTarget "HighlightedSearch" */;
+			buildConfigurationList = 358D8D711FC414D800FD5AAC /* Build configuration list for PBXNativeTarget "HighlightedSearchDemo" */;
 			buildPhases = (
 				358D8D571FC414D800FD5AAC /* Sources */,
 				358D8D581FC414D800FD5AAC /* Frameworks */,
@@ -200,9 +200,9 @@
 			);
 			dependencies = (
 			);
-			name = HighlightedSearch;
+			name = HighlightedSearchDemo;
 			productName = HighlightedSearch;
-			productReference = 358D8D5B1FC414D800FD5AAC /* HighlightedSearch.app */;
+			productReference = 358D8D5B1FC414D800FD5AAC /* HighlightedSearchDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 358D8D561FC414D800FD5AAC /* Build configuration list for PBXProject "HighlightedSearch" */;
+			buildConfigurationList = 358D8D561FC414D800FD5AAC /* Build configuration list for PBXProject "HighlightedSearchDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,7 +233,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				358D8D5A1FC414D800FD5AAC /* HighlightedSearch */,
+				358D8D5A1FC414D800FD5AAC /* HighlightedSearchDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -396,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ST685X75RG;
-				INFOPLIST_FILE = HighlightedSearch/Info.plist;
+				INFOPLIST_FILE = HighlightedSearchDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.HighlightedSearch;
@@ -411,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ST685X75RG;
-				INFOPLIST_FILE = HighlightedSearch/Info.plist;
+				INFOPLIST_FILE = HighlightedSearchDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.HighlightedSearch;
@@ -423,7 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		358D8D561FC414D800FD5AAC /* Build configuration list for PBXProject "HighlightedSearch" */ = {
+		358D8D561FC414D800FD5AAC /* Build configuration list for PBXProject "HighlightedSearchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				358D8D6F1FC414D800FD5AAC /* Debug */,
@@ -432,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		358D8D711FC414D800FD5AAC /* Build configuration list for PBXNativeTarget "HighlightedSearch" */ = {
+		358D8D711FC414D800FD5AAC /* Build configuration list for PBXNativeTarget "HighlightedSearchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				358D8D721FC414D800FD5AAC /* Debug */,
