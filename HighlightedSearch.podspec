@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description  = "support spelling, Jane spell, Chinese characters, multi-syllable words"
   s.homepage     = "https://github.com/PengfeiWang666/HighlightedSearch"
   s.screenshots  = "https://github.com/PengfeiWang666/HighlightedSearch/blob/master/ReadMeImage/screenshots_1.gif"
-  s.license      = "MIT (example)"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { "WangPengfei" => "wpf_silence@163.com" }
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/PengfeiWang666/HighlightedSearch.git", :tag => s.version }
