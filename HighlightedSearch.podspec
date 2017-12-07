@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.name         = "HighlightedSearch"
   s.version      = "0.0.1"
   s.summary      = "Support keyword search highlighting, WeChat effect basically, added polyphonic"
-  s.description  = "support spelling, Jane spell, Chinese characters, multi-syllable words"
+  s.description  = "support complateSpelling search, firstLetter search, Chinese characters search, multi-syllable words"
   s.homepage     = "https://github.com/PengfeiWang666/HighlightedSearch"
-  s.screenshots  = "https://github.com/PengfeiWang666/HighlightedSearch/blob/master/ReadMeImage/screenshots_1.gif"
+  # s.screenshots  = "https://github.com/PengfeiWang666/HighlightedSearch/blob/master/ReadMeImage/screenshots_1.gif"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { "WangPengfei" => "wpf_silence@163.com" }
   s.ios.deployment_target = "8.0"
