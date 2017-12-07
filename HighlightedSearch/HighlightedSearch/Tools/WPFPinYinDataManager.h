@@ -13,7 +13,7 @@
 /** 添加解析的单个数据源 */
 + (void)addInitializeString:(NSString *)string;
 
-/** 已解析的数据源 */
+/** 获取已解析的数据源 */
 + (NSArray *)getInitializedDataSource;
 
 @end

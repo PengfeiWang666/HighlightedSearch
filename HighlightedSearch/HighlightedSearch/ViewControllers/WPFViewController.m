@@ -42,10 +42,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     self.dataSource = personArray;
     // 将假数据按字母进行排序
     
-    // 赋值
-//    HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
-    NSMutableArray *tempArray = [NSMutableArray array];
     NSDate *beginTime = [NSDate date];
     NSLog(@"开始解析数据了，开始时间：%@，数据条数：%ld", beginTime, (unsigned long)personArray.count);
     
@@ -55,7 +52,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-06 11:52:09.683399 HighlightedSearch[4397:1868099] 解析结束，结束时间：2017-12-06 03:52:09 +0000，耗时：1.0291 秒
      */
 //    for (NSInteger i = 0; i < personArray.count; ++i) {
-    
     
     
     /**
@@ -230,7 +226,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-//    WPFPerson *person = self.dataSource[indexPath.row];
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
 }

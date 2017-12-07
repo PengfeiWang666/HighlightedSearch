@@ -102,11 +102,9 @@
                 initialString = [initialString stringByAppendingString:firstLetter];
                 // 拼接首字母位置字符串，如 "王鹏飞" 对应的首字母位置就是 "0,1,2"
                 [pinyinFirstLetterLocationArray addObject:@(i)];
-                
-            } else {
-                
             }
         } else {
+            // 如果包含多音字，需要对多音字进行额外处理
             if (person.isContainPolyPhone) {
                 [polyPhoneCompleteSpelling appendFormat:@"%C",[name characterAtIndex:i]];
                 [polyPhoneCompleteSpellingArray addObject:@(i)];
