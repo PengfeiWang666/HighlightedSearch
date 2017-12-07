@@ -26,10 +26,22 @@
 @property (nonatomic, copy) NSString *initialLocationString;
 /** 高亮位置 */
 @property (nonatomic, assign) NSInteger highlightLoaction;
-/**  */
+/** 关键字范围 */
 @property (nonatomic, assign) NSRange textRange;
 /** 匹配类型 */
 @property (nonatomic, assign) NSInteger matchType;
+
+// 以下四个属性为多音字的适配，暂时只支持双多音字
+/** 是否包含多音字 */
+@property (nonatomic, assign) BOOL isContainPolyPhone;
+/** 第二个多音字 拼音全拼（小写） */
+@property (nonatomic, copy) NSString *polyPhoneCompleteSpelling;
+/** 第二个多音字 拼音首字母（小写）*/
+@property (nonatomic, copy) NSString *polyPhoneInitialString;
+/** 第二个多音字 拼音全拼（小写）位置 */
+@property (nonatomic, copy) NSString *polyPhonePinyinLocationString;
+/** 第二个多音字 拼音首字母拼音（小写）数组字符串位置 */
+@property (nonatomic, copy) NSString *polyPhoneInitialLocationString;
 
 
 /**
