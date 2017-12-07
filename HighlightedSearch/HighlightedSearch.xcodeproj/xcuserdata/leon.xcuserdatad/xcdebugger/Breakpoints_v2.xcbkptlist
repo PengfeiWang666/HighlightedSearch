@@ -35,29 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HighlightedSearch/Model/WPFPerson.m"
-            timestampString = "534316318.55091"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "+personWithName:hanyuPinyinOutputFormat:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "HighlightedSearch/Tools/WPFPinYinTools.m"
-            timestampString = "534316318.550992"
+            timestampString = "534318974.660784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "+searchEffectiveResultWithSearchString:Person:"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "+searchEffectiveResultWithSearchString:nameString:completeSpelling:initialString:pinyinLocationString:initialLocationString:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

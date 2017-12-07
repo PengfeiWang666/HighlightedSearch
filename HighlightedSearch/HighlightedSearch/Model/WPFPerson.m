@@ -65,7 +65,6 @@
             if ([WPFPinYinTools isChinese:hanyuChar]) {
                 // 获取该字符的第一个拼音字母，如 wang 的 firstLetter 就是 w
                 NSString *firstLetter = [mainPinyinStrOfChar substringToIndex:1];
-
                 
                 // 多音字的处理
                 if (person.isContainPolyPhone) {
@@ -105,15 +104,19 @@
                 [pinyinFirstLetterLocationArray addObject:@(i)];
                 
             } else {
-                [completeSpellingArray addObject:@(i)];
-                [pinyinFirstLetterLocationArray addObject:@(i)];
-                initialString = [initialString stringByAppendingString:hanyuChar];
+                
             }
         } else {
+            if (person.isContainPolyPhone) {
+                [polyPhoneCompleteSpelling appendFormat:@"%C",[name characterAtIndex:i]];
+                [polyPhoneCompleteSpellingArray addObject:@(i)];
+                polyPhoneInitialString = [polyPhoneInitialString stringByAppendingString:hanyuChar];
+            }
             [completeSpelling appendFormat:@"%C",[name characterAtIndex:i]];
+            [completeSpellingArray addObject:@(i)];
+            [pinyinFirstLetterLocationArray addObject:@(i)];
+            initialString = [initialString stringByAppendingString:hanyuChar];
         }
-        
-        
     }
     
     person.name = name;
