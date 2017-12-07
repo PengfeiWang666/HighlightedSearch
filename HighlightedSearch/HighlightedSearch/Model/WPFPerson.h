@@ -11,6 +11,8 @@
 
 @interface WPFPerson : NSObject
 
+/** 唯一标识符 */
+@property (nonatomic, copy) NSString *personId;
 /** 人物名称，如：王鹏飞 */
 @property (nonatomic, copy) NSString *name;
 /** 拼音全拼（小写）如：@"wangpengfei" */

@@ -41,7 +41,6 @@ typedef NS_ENUM(NSUInteger, MatchType) {
 
 + (WPFSearchResultModel *)searchEffectiveResultWithSearchString:(NSString *)searchStrLower
                                                          Person:(WPFPerson *)person;
-
 /** 排序规则 */
 + (NSArray *)sortingRules;
 

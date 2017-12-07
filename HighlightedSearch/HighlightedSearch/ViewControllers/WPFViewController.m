@@ -9,6 +9,7 @@
 #import "WPFViewController.h"
 #import "WPFSearchResultViewController.h"
 #import "WPFPerson.h"
+#import "WPFPinYinDataManager.h"
 
 @interface WPFViewController () <UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -38,11 +39,11 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:jsonPath]];
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
     NSArray *personArray = jsonDict[@"data"];
-    
+    self.dataSource = personArray;
     // 将假数据按字母进行排序
     
     // 赋值
-    HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
+//    HanyuPinyinOutputFormat *pinyinFormat = [WPFPinYinTools getOutputFormat];
     
     NSMutableArray *tempArray = [NSMutableArray array];
     NSDate *beginTime = [NSDate date];
@@ -72,12 +73,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      */
     for (NSString *name in personArray) {
         @autoreleasepool {
-//                        NSString *name = personArray[i];
-        WPFPerson *person = [WPFPerson personWithName:name hanyuPinyinOutputFormat:pinyinFormat];
-//        dispatch_async(queue, ^{
-            [tempArray addObject:person];
-//        });
-    
+            [WPFPinYinDataManager addInitializeString:name];
         }
     }
 //    }];
@@ -85,7 +81,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     NSDate *endTime = [NSDate date];
     NSTimeInterval costTime = [endTime timeIntervalSinceDate:beginTime];
     NSLog(@"解析结束，结束时间：%@，耗时：%.4f 秒", endTime, costTime);
-    self.dataSource = tempArray;
+    
 }
 
 - (void)_setupUI {
@@ -94,7 +90,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     [self.view addSubview:self.tableView];
     
     self.navigationItem.titleView = self.searchVC.searchBar;
-    
 }
 
 #pragma mark - UISearchBarDelegate
@@ -186,7 +181,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-06 12:00:39.281563 HighlightedSearch[4439:1870645] 开始匹配，开始时间：2017-12-06 04:00:39 +0000
      2017-12-06 12:00:39.317743 HighlightedSearch[4439:1870645] 匹配结束，结束时间：2017-12-06 04:00:39 +0000，耗时：0.0365
      */
-    for (WPFPerson *person in self.dataSource) {
+    for (WPFPerson *person in [WPFPinYinDataManager getInitializedDataSource]) {
     
 //        WPFPerson *person = self.dataSource[i];
 //        WPFPerson *person = (WPFPerson *)obj;
@@ -235,8 +230,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-    WPFPerson *person = self.dataSource[indexPath.row];
-    cell.textLabel.text = person.name;
+//    WPFPerson *person = self.dataSource[indexPath.row];
+    cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
 }
 
