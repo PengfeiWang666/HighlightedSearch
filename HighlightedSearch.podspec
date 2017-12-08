@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "WangPengfei" => "wpf_silence@163.com" }
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/PengfeiWang666/HighlightedSearch.git", :tag => s.version }
-  s.source_files  = "HighlightedSearch", "HighlightedSearch/**/*.{h,m}"
+  s.source_files  = "HighlightedSearch", "HighlightedSearch/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
   s.library   = "objc"
