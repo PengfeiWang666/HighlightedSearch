@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075F74E0B426ED04C06AD597209F73E3 /* Pods-HighlightedSearch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67005A274ECCD6AEE3E864B708DFED56 /* Pods-HighlightedSearch_Tests-dummy.m */; };
+		0D2A41ABE6989589E4CC2769060465CE /* WPFPinYinDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DA6BAB771B2AD2380A0AAB1AB59775 /* WPFPinYinDataManager.m */; };
+		18194F4CBA8B56409CA650E9501C1540 /* PinyinFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 710C23318AB90284483AB6B78DE76F14 /* PinyinFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF59C727EE219D6291CA2861610A67A /* Pods-HighlightedSearch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF123E397233B52145BC34E6421B1DCC /* Pods-HighlightedSearch_Example-dummy.m */; };
+		2D785577FA5E19158535C498A9A743C8 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = F0620ED5DA4558334DA3D8E23E220C81 /* NSString+PinYin4Cocoa.m */; };
+		3720761479F55D3FE169A0E9F8979DCF /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A036B1020F5696E3B57DFD0870A3E166 /* HanyuPinyinOutputFormat.m */; };
+		3CF0D12D9AEA481F4695054583DD11FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		540396CA0AEA9129E3C773640FC445FE /* WPFPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = FF84A9F1DAAFB4728CEE8AA455A23D94 /* WPFPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EBE9C820A430E290E440D18CBF3E19B /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7243A18112F27DCE5CB08E272C91B913 /* ChineseToPinyinResource.m */; };
+		6160F453F1D9E03C0B3631C066117491 /* Pods-HighlightedSearch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9C4436079ED20DF2AD5838290FD77A /* Pods-HighlightedSearch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635AD17B2A259EB1375F43AEAE28371E /* NSString+PinYin4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = F9013711E1D890D372C8DD89D7B24CD2 /* NSString+PinYin4Cocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84829EA7A8505C2F4E4143072CCAA067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		89FC7FEE6D5F8EA60C7CABA70D41D5EB /* HanyuPinyinOutputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD6200A0955F446AC5CEB5DB443FB0B /* HanyuPinyinOutputFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3FB4FEC712E1D37E8DED7F1E4DAEE6 /* ChineseToPinyinResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1239372254D3A33FDEBC9400AF194859 /* ChineseToPinyinResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8EEE55068F56C4C119603A68B3A700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9EAF8658C0BEA9C4DCD8E354643A7472 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D6486C81723492FB2AEC4F0F168F4 /* PinyinHelper.m */; };
+		A85E812EFBC430E4A9B3CB15B72A74C3 /* PinYin4Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD78A2E63138B3DA2B27CA4055498E3 /* PinYin4Objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF991FDAE155534587A081B6CA007D47 /* WPFPinYinTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B1848C8E242607E95CA833B566A8BD32 /* WPFPinYinTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D0658B1F00880B73EF37A4DCE8AEA9 /* Pods-HighlightedSearch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B898EFC0D5B86295EACA71FBCDCC62A /* Pods-HighlightedSearch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B757C69EF1C53593B52C5845960267F9 /* PinyinHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 39864717A95751801E645D95A637184A /* PinyinHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C01B44F3DE853CE279CA9FE003855437 /* WPFPinYinTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA185FF39BC4CB2C2C6F4F0A08B1A9A /* WPFPinYinTools.m */; };
+		C359A4043E818EE0824B013DB9D6A212 /* HighlightedSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A32A995A8F02230096A14AE03C03A91 /* HighlightedSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4059857470D26260DAC3DEFF0A1936B /* HighlightedSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4995D5844118EED8ACC0BA59D7D12B71 /* HighlightedSearch.bundle */; };
+		CCD5FD5BE5CF7C5953FF94228EBA45FA /* WPFPinYinDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 68FFCC3FB76471C21FA160AFDF15121D /* WPFPinYinDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF74EF23F5E067C35CDE1588B3BBA885 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F36D7CD95DCDBFAA8522F91E984D84D7 /* PinyinFormatter.m */; };
+		ECBEC0DA3C0F44E85E24D06D7E148545 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBF75F03EBCD49CB11228A7EB155403F /* unicode_to_hanyu_pinyin.txt */; };
+		F5B1B900AAEA66FB307AB4F823F07CF1 /* WPFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EB50B43734EF06003F3E21E468FA4 /* WPFPerson.m */; };
+		FC17FA19F99C689876DA3F5666E61CE7 /* HighlightedSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC5BF49DCF187AAC9C4CE469B1F0CB /* HighlightedSearch-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4991D536483BBC46B95B5723FE46FD54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40796AA7F92F2574746694CBFE4D22A;
+			remoteInfo = HighlightedSearch;
+		};
+		4B7F288E93B4CD6CC33F495470B0194C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42318B9A072E63C83B94450A15E4CA8A;
+			remoteInfo = "HighlightedSearch-HighlightedSearch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0089FD916EC1FF5ABF271BE895ED8AD5 /* Pods_HighlightedSearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HighlightedSearch_Tests.framework; path = "Pods-HighlightedSearch_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0661052A6DA2A2FA5A40192684DE954B /* Pods-HighlightedSearch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HighlightedSearch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B6CAA6901C91A0EA9F05C10CC7EC4EA /* Pods_HighlightedSearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HighlightedSearch_Example.framework; path = "Pods-HighlightedSearch_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1239372254D3A33FDEBC9400AF194859 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyinResource.h; path = HighlightedSearch/Classes/ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		1BA32A414236F6372427794B5AA148BA /* Pods-HighlightedSearch_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HighlightedSearch_Tests-resources.sh"; sourceTree = "<group>"; };
+		1FC3C3971EDFFC638060CAB547F4F9C9 /* HighlightedSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HighlightedSearch.framework; path = HighlightedSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6F27497E73664DB1402BED26899549 /* Pods-HighlightedSearch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HighlightedSearch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CD6200A0955F446AC5CEB5DB443FB0B /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HanyuPinyinOutputFormat.h; path = HighlightedSearch/Classes/HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		36DA6BAB771B2AD2380A0AAB1AB59775 /* WPFPinYinDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFPinYinDataManager.m; path = HighlightedSearch/Classes/WPFPinYinDataManager.m; sourceTree = "<group>"; };
+		39864717A95751801E645D95A637184A /* PinyinHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinHelper.h; path = HighlightedSearch/Classes/PinyinHelper.h; sourceTree = "<group>"; };
+		3A32A995A8F02230096A14AE03C03A91 /* HighlightedSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HighlightedSearch-umbrella.h"; sourceTree = "<group>"; };
+		3D72B1E8F445363176377D3D6C271257 /* Pods-HighlightedSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HighlightedSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		41B14FFE2EB1692091FA96F8B87FF1EF /* Pods-HighlightedSearch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HighlightedSearch_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4433BCF4F5D3D988648F524D916AA9C6 /* ResourceBundle-HighlightedSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HighlightedSearch-Info.plist"; sourceTree = "<group>"; };
+		466A8E4878348AF6F7821453323B46ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4995D5844118EED8ACC0BA59D7D12B71 /* HighlightedSearch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HighlightedSearch.bundle; path = HighlightedSearch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A62404621B3B99CC45BBA59D43BF68A /* Pods-HighlightedSearch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HighlightedSearch_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4B898EFC0D5B86295EACA71FBCDCC62A /* Pods-HighlightedSearch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HighlightedSearch_Tests-umbrella.h"; sourceTree = "<group>"; };
+		56782E2450A0271EFB3C79CE761D2BE3 /* HighlightedSearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HighlightedSearch-prefix.pch"; sourceTree = "<group>"; };
+		57E6B0059E91D4645C6914366741BB20 /* Pods-HighlightedSearch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HighlightedSearch_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5EA185FF39BC4CB2C2C6F4F0A08B1A9A /* WPFPinYinTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFPinYinTools.m; path = HighlightedSearch/Classes/WPFPinYinTools.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67005A274ECCD6AEE3E864B708DFED56 /* Pods-HighlightedSearch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HighlightedSearch_Tests-dummy.m"; sourceTree = "<group>"; };
+		68FFCC3FB76471C21FA160AFDF15121D /* WPFPinYinDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFPinYinDataManager.h; path = HighlightedSearch/Classes/WPFPinYinDataManager.h; sourceTree = "<group>"; };
+		6D447C2EBF27AEAE0AE48ADFDAFE99AC /* Pods-HighlightedSearch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HighlightedSearch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E42E4BB74571682687D8FB89630A264 /* Pods-HighlightedSearch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HighlightedSearch_Example.modulemap"; sourceTree = "<group>"; };
+		710C23318AB90284483AB6B78DE76F14 /* PinyinFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinFormatter.h; path = HighlightedSearch/Classes/PinyinFormatter.h; sourceTree = "<group>"; };
+		7243A18112F27DCE5CB08E272C91B913 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyinResource.m; path = HighlightedSearch/Classes/ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		784BE2C355FA255292A021A1B37AD916 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82379F59F23EB4B9D72777A2361CCDB6 /* Pods-HighlightedSearch_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HighlightedSearch_Example-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		943C1ACA149681C18F8435F07ED11BC7 /* Pods-HighlightedSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HighlightedSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
+		95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HighlightedSearch.xcconfig; sourceTree = "<group>"; };
+		9F7D4A65ED371D066378BEE719817F9A /* HighlightedSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HighlightedSearch.modulemap; sourceTree = "<group>"; };
+		9F9C4436079ED20DF2AD5838290FD77A /* Pods-HighlightedSearch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HighlightedSearch_Example-umbrella.h"; sourceTree = "<group>"; };
+		A036B1020F5696E3B57DFD0870A3E166 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = HighlightedSearch/Classes/HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		B1848C8E242607E95CA833B566A8BD32 /* WPFPinYinTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFPinYinTools.h; path = HighlightedSearch/Classes/WPFPinYinTools.h; sourceTree = "<group>"; };
+		B9BC5BF49DCF187AAC9C4CE469B1F0CB /* HighlightedSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HighlightedSearch-dummy.m"; sourceTree = "<group>"; };
+		BBF75F03EBCD49CB11228A7EB155403F /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = unicode_to_hanyu_pinyin.txt; path = HighlightedSearch/Assets/unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		CA5EB50B43734EF06003F3E21E468FA4 /* WPFPerson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFPerson.m; path = HighlightedSearch/Classes/WPFPerson.m; sourceTree = "<group>"; };
+		D0B8B6B8962E6E39AB42129B67A0CB7E /* Pods-HighlightedSearch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HighlightedSearch_Tests.modulemap"; sourceTree = "<group>"; };
+		D62D6486C81723492FB2AEC4F0F168F4 /* PinyinHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = HighlightedSearch/Classes/PinyinHelper.m; sourceTree = "<group>"; };
+		DDF582A7D914F6596C595BCA6A7875DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF123E397233B52145BC34E6421B1DCC /* Pods-HighlightedSearch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HighlightedSearch_Example-dummy.m"; sourceTree = "<group>"; };
+		E13AB5BF4E0151DAD0F918D69C17E05D /* Pods-HighlightedSearch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HighlightedSearch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0620ED5DA4558334DA3D8E23E220C81 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin4Cocoa.m"; path = "HighlightedSearch/Classes/NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		F36D7CD95DCDBFAA8522F91E984D84D7 /* PinyinFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = HighlightedSearch/Classes/PinyinFormatter.m; sourceTree = "<group>"; };
+		F8ADE5EEA5008B8F979195FBE5446856 /* Pods-HighlightedSearch_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HighlightedSearch_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F9013711E1D890D372C8DD89D7B24CD2 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin4Cocoa.h"; path = "HighlightedSearch/Classes/NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		FDD78A2E63138B3DA2B27CA4055498E3 /* PinYin4Objc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = HighlightedSearch/Classes/PinYin4Objc.h; sourceTree = "<group>"; };
+		FF84A9F1DAAFB4728CEE8AA455A23D94 /* WPFPerson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFPerson.h; path = HighlightedSearch/Classes/WPFPerson.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F1181A444ACA5127EA2A993BFF9E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8EEE55068F56C4C119603A68B3A700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3E895D5DBA54F008AF327A58598B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1534D8CA738FC085B4F6AE97D6054FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF0D12D9AEA481F4695054583DD11FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB16D5DE221A0C600C9950A55570AFB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84829EA7A8505C2F4E4143072CCAA067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BD99FACD0AD1ADF8EF91B191DF23BC /* HighlightedSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1239372254D3A33FDEBC9400AF194859 /* ChineseToPinyinResource.h */,
+				7243A18112F27DCE5CB08E272C91B913 /* ChineseToPinyinResource.m */,
+				2CD6200A0955F446AC5CEB5DB443FB0B /* HanyuPinyinOutputFormat.h */,
+				A036B1020F5696E3B57DFD0870A3E166 /* HanyuPinyinOutputFormat.m */,
+				F9013711E1D890D372C8DD89D7B24CD2 /* NSString+PinYin4Cocoa.h */,
+				F0620ED5DA4558334DA3D8E23E220C81 /* NSString+PinYin4Cocoa.m */,
+				FDD78A2E63138B3DA2B27CA4055498E3 /* PinYin4Objc.h */,
+				710C23318AB90284483AB6B78DE76F14 /* PinyinFormatter.h */,
+				F36D7CD95DCDBFAA8522F91E984D84D7 /* PinyinFormatter.m */,
+				39864717A95751801E645D95A637184A /* PinyinHelper.h */,
+				D62D6486C81723492FB2AEC4F0F168F4 /* PinyinHelper.m */,
+				FF84A9F1DAAFB4728CEE8AA455A23D94 /* WPFPerson.h */,
+				CA5EB50B43734EF06003F3E21E468FA4 /* WPFPerson.m */,
+				68FFCC3FB76471C21FA160AFDF15121D /* WPFPinYinDataManager.h */,
+				36DA6BAB771B2AD2380A0AAB1AB59775 /* WPFPinYinDataManager.m */,
+				B1848C8E242607E95CA833B566A8BD32 /* WPFPinYinTools.h */,
+				5EA185FF39BC4CB2C2C6F4F0A08B1A9A /* WPFPinYinTools.m */,
+				AA7B1903050E187CB80B4DC3AD5D9682 /* Resources */,
+				B532D8983C7617EB0A9E2EC5A1401217 /* Support Files */,
+			);
+			name = HighlightedSearch;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4648917FB425F635818003FBC82B4820 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE443ECE78E0F19CF18ADAC4B74D8E8 /* Pods-HighlightedSearch_Example */,
+				9400D00F5897B3349BFB0798A717971A /* Pods-HighlightedSearch_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6210B0C10082FC5D7890E2BA6EB8D8BD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11BD99FACD0AD1ADF8EF91B191DF23BC /* HighlightedSearch */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6210B0C10082FC5D7890E2BA6EB8D8BD /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B89A9E12B2A54B25B7358C16961385CD /* Products */,
+				4648917FB425F635818003FBC82B4820 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9400D00F5897B3349BFB0798A717971A /* Pods-HighlightedSearch_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF582A7D914F6596C595BCA6A7875DA /* Info.plist */,
+				D0B8B6B8962E6E39AB42129B67A0CB7E /* Pods-HighlightedSearch_Tests.modulemap */,
+				6D447C2EBF27AEAE0AE48ADFDAFE99AC /* Pods-HighlightedSearch_Tests-acknowledgements.markdown */,
+				2C6F27497E73664DB1402BED26899549 /* Pods-HighlightedSearch_Tests-acknowledgements.plist */,
+				67005A274ECCD6AEE3E864B708DFED56 /* Pods-HighlightedSearch_Tests-dummy.m */,
+				F8ADE5EEA5008B8F979195FBE5446856 /* Pods-HighlightedSearch_Tests-frameworks.sh */,
+				1BA32A414236F6372427794B5AA148BA /* Pods-HighlightedSearch_Tests-resources.sh */,
+				4B898EFC0D5B86295EACA71FBCDCC62A /* Pods-HighlightedSearch_Tests-umbrella.h */,
+				3D72B1E8F445363176377D3D6C271257 /* Pods-HighlightedSearch_Tests.debug.xcconfig */,
+				57E6B0059E91D4645C6914366741BB20 /* Pods-HighlightedSearch_Tests.release.xcconfig */,
+			);
+			name = "Pods-HighlightedSearch_Tests";
+			path = "Target Support Files/Pods-HighlightedSearch_Tests";
+			sourceTree = "<group>";
+		};
+		AA7B1903050E187CB80B4DC3AD5D9682 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBF75F03EBCD49CB11228A7EB155403F /* unicode_to_hanyu_pinyin.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADE443ECE78E0F19CF18ADAC4B74D8E8 /* Pods-HighlightedSearch_Example */ = {
+			isa = PBXGroup;
+			children = (
+				784BE2C355FA255292A021A1B37AD916 /* Info.plist */,
+				6E42E4BB74571682687D8FB89630A264 /* Pods-HighlightedSearch_Example.modulemap */,
+				E13AB5BF4E0151DAD0F918D69C17E05D /* Pods-HighlightedSearch_Example-acknowledgements.markdown */,
+				0661052A6DA2A2FA5A40192684DE954B /* Pods-HighlightedSearch_Example-acknowledgements.plist */,
+				DF123E397233B52145BC34E6421B1DCC /* Pods-HighlightedSearch_Example-dummy.m */,
+				4A62404621B3B99CC45BBA59D43BF68A /* Pods-HighlightedSearch_Example-frameworks.sh */,
+				82379F59F23EB4B9D72777A2361CCDB6 /* Pods-HighlightedSearch_Example-resources.sh */,
+				9F9C4436079ED20DF2AD5838290FD77A /* Pods-HighlightedSearch_Example-umbrella.h */,
+				41B14FFE2EB1692091FA96F8B87FF1EF /* Pods-HighlightedSearch_Example.debug.xcconfig */,
+				943C1ACA149681C18F8435F07ED11BC7 /* Pods-HighlightedSearch_Example.release.xcconfig */,
+			);
+			name = "Pods-HighlightedSearch_Example";
+			path = "Target Support Files/Pods-HighlightedSearch_Example";
+			sourceTree = "<group>";
+		};
+		B532D8983C7617EB0A9E2EC5A1401217 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F7D4A65ED371D066378BEE719817F9A /* HighlightedSearch.modulemap */,
+				95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */,
+				B9BC5BF49DCF187AAC9C4CE469B1F0CB /* HighlightedSearch-dummy.m */,
+				56782E2450A0271EFB3C79CE761D2BE3 /* HighlightedSearch-prefix.pch */,
+				3A32A995A8F02230096A14AE03C03A91 /* HighlightedSearch-umbrella.h */,
+				466A8E4878348AF6F7821453323B46ED /* Info.plist */,
+				4433BCF4F5D3D988648F524D916AA9C6 /* ResourceBundle-HighlightedSearch-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HighlightedSearch";
+			sourceTree = "<group>";
+		};
+		B89A9E12B2A54B25B7358C16961385CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4995D5844118EED8ACC0BA59D7D12B71 /* HighlightedSearch.bundle */,
+				1FC3C3971EDFFC638060CAB547F4F9C9 /* HighlightedSearch.framework */,
+				0B6CAA6901C91A0EA9F05C10CC7EC4EA /* Pods_HighlightedSearch_Example.framework */,
+				0089FD916EC1FF5ABF271BE895ED8AD5 /* Pods_HighlightedSearch_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		346E25CC521DDE6393FA3041DB743A12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3FB4FEC712E1D37E8DED7F1E4DAEE6 /* ChineseToPinyinResource.h in Headers */,
+				89FC7FEE6D5F8EA60C7CABA70D41D5EB /* HanyuPinyinOutputFormat.h in Headers */,
+				C359A4043E818EE0824B013DB9D6A212 /* HighlightedSearch-umbrella.h in Headers */,
+				635AD17B2A259EB1375F43AEAE28371E /* NSString+PinYin4Cocoa.h in Headers */,
+				A85E812EFBC430E4A9B3CB15B72A74C3 /* PinYin4Objc.h in Headers */,
+				18194F4CBA8B56409CA650E9501C1540 /* PinyinFormatter.h in Headers */,
+				B757C69EF1C53593B52C5845960267F9 /* PinyinHelper.h in Headers */,
+				540396CA0AEA9129E3C773640FC445FE /* WPFPerson.h in Headers */,
+				CCD5FD5BE5CF7C5953FF94228EBA45FA /* WPFPinYinDataManager.h in Headers */,
+				AF991FDAE155534587A081B6CA007D47 /* WPFPinYinTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E1D9E217BD0CF326E391875B2C71E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D0658B1F00880B73EF37A4DCE8AEA9 /* Pods-HighlightedSearch_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0CD886F2B40F83084C5703721FC034 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6160F453F1D9E03C0B3631C066117491 /* Pods-HighlightedSearch_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2BC7A770D7514F5F4CDE39CD5E53B1AD /* Pods-HighlightedSearch_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C101465A0EEBECE176B60CF52470FBC3 /* Build configuration list for PBXNativeTarget "Pods-HighlightedSearch_Tests" */;
+			buildPhases = (
+				16C574642910124200623F0F543D40EC /* Sources */,
+				D1534D8CA738FC085B4F6AE97D6054FA /* Frameworks */,
+				34E1D9E217BD0CF326E391875B2C71E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HighlightedSearch_Tests";
+			productName = "Pods-HighlightedSearch_Tests";
+			productReference = 0089FD916EC1FF5ABF271BE895ED8AD5 /* Pods_HighlightedSearch_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42318B9A072E63C83B94450A15E4CA8A /* HighlightedSearch-HighlightedSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42008DA608B32E7EEFB26DC34AC4A36 /* Build configuration list for PBXNativeTarget "HighlightedSearch-HighlightedSearch" */;
+			buildPhases = (
+				3BF609EFB1FF91095DEA2285A42944FB /* Sources */,
+				BA3E895D5DBA54F008AF327A58598B6C /* Frameworks */,
+				45E0CF274E20557848E381F143A27587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HighlightedSearch-HighlightedSearch";
+			productName = "HighlightedSearch-HighlightedSearch";
+			productReference = 4995D5844118EED8ACC0BA59D7D12B71 /* HighlightedSearch.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6950FE2ACA6B2C5B38037C82D2EAE4F7 /* Pods-HighlightedSearch_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE0919BE49C3292A669C17E6DDE845B5 /* Build configuration list for PBXNativeTarget "Pods-HighlightedSearch_Example" */;
+			buildPhases = (
+				ACDDE766BAECF01A9E5988220A44F586 /* Sources */,
+				EB16D5DE221A0C600C9950A55570AFB4 /* Frameworks */,
+				FD0CD886F2B40F83084C5703721FC034 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9500E3F0070437B2477DF4558411EAB4 /* PBXTargetDependency */,
+			);
+			name = "Pods-HighlightedSearch_Example";
+			productName = "Pods-HighlightedSearch_Example";
+			productReference = 0B6CAA6901C91A0EA9F05C10CC7EC4EA /* Pods_HighlightedSearch_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C40796AA7F92F2574746694CBFE4D22A /* HighlightedSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE13C6351D67D5EDE342DF094E155429 /* Build configuration list for PBXNativeTarget "HighlightedSearch" */;
+			buildPhases = (
+				5D12909FD7BFBF7557C0F4DB7306AD04 /* Sources */,
+				34F1181A444ACA5127EA2A993BFF9E5B /* Frameworks */,
+				C2627C7748DF1B78DAA3F61945DED12C /* Resources */,
+				346E25CC521DDE6393FA3041DB743A12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28FF433F5964A4ABF34A976499B55220 /* PBXTargetDependency */,
+			);
+			name = HighlightedSearch;
+			productName = HighlightedSearch;
+			productReference = 1FC3C3971EDFFC638060CAB547F4F9C9 /* HighlightedSearch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B89A9E12B2A54B25B7358C16961385CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C40796AA7F92F2574746694CBFE4D22A /* HighlightedSearch */,
+				42318B9A072E63C83B94450A15E4CA8A /* HighlightedSearch-HighlightedSearch */,
+				6950FE2ACA6B2C5B38037C82D2EAE4F7 /* Pods-HighlightedSearch_Example */,
+				2BC7A770D7514F5F4CDE39CD5E53B1AD /* Pods-HighlightedSearch_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E0CF274E20557848E381F143A27587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBEC0DA3C0F44E85E24D06D7E148545 /* unicode_to_hanyu_pinyin.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2627C7748DF1B78DAA3F61945DED12C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4059857470D26260DAC3DEFF0A1936B /* HighlightedSearch.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C574642910124200623F0F543D40EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075F74E0B426ED04C06AD597209F73E3 /* Pods-HighlightedSearch_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF609EFB1FF91095DEA2285A42944FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D12909FD7BFBF7557C0F4DB7306AD04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE9C820A430E290E440D18CBF3E19B /* ChineseToPinyinResource.m in Sources */,
+				3720761479F55D3FE169A0E9F8979DCF /* HanyuPinyinOutputFormat.m in Sources */,
+				FC17FA19F99C689876DA3F5666E61CE7 /* HighlightedSearch-dummy.m in Sources */,
+				2D785577FA5E19158535C498A9A743C8 /* NSString+PinYin4Cocoa.m in Sources */,
+				DF74EF23F5E067C35CDE1588B3BBA885 /* PinyinFormatter.m in Sources */,
+				9EAF8658C0BEA9C4DCD8E354643A7472 /* PinyinHelper.m in Sources */,
+				F5B1B900AAEA66FB307AB4F823F07CF1 /* WPFPerson.m in Sources */,
+				0D2A41ABE6989589E4CC2769060465CE /* WPFPinYinDataManager.m in Sources */,
+				C01B44F3DE853CE279CA9FE003855437 /* WPFPinYinTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDDE766BAECF01A9E5988220A44F586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF59C727EE219D6291CA2861610A67A /* Pods-HighlightedSearch_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28FF433F5964A4ABF34A976499B55220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HighlightedSearch-HighlightedSearch";
+			target = 42318B9A072E63C83B94450A15E4CA8A /* HighlightedSearch-HighlightedSearch */;
+			targetProxy = 4B7F288E93B4CD6CC33F495470B0194C /* PBXContainerItemProxy */;
+		};
+		9500E3F0070437B2477DF4558411EAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HighlightedSearch;
+			target = C40796AA7F92F2574746694CBFE4D22A /* HighlightedSearch */;
+			targetProxy = 4991D536483BBC46B95B5723FE46FD54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C864F5AF5A66DB4DAAC35F9CBC1A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HighlightedSearch";
+				INFOPLIST_FILE = "Target Support Files/HighlightedSearch/ResourceBundle-HighlightedSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = HighlightedSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		13B100D11354356C850B99804CAF4EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E6B0059E91D4645C6914366741BB20 /* Pods-HighlightedSearch_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HighlightedSearch_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HighlightedSearch_Tests/Pods-HighlightedSearch_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HighlightedSearch_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B209AE758168E7043677DF4C35E4520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943C1ACA149681C18F8435F07ED11BC7 /* Pods-HighlightedSearch_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HighlightedSearch_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HighlightedSearch_Example/Pods-HighlightedSearch_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HighlightedSearch_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5065CE0691F3737B5F215FCB992D4EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HighlightedSearch/HighlightedSearch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HighlightedSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HighlightedSearch/HighlightedSearch.modulemap";
+				PRODUCT_NAME = HighlightedSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91F193C81E2C5513FCA50661B5EE0C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D72B1E8F445363176377D3D6C271257 /* Pods-HighlightedSearch_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HighlightedSearch_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HighlightedSearch_Tests/Pods-HighlightedSearch_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HighlightedSearch_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BCEB8CD18488D4D12EF17A7CCC7F8424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HighlightedSearch";
+				INFOPLIST_FILE = "Target Support Files/HighlightedSearch/ResourceBundle-HighlightedSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = HighlightedSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BF8C4BE21D21D66B2C350A1DBB94ED63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B14FFE2EB1692091FA96F8B87FF1EF /* Pods-HighlightedSearch_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HighlightedSearch_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HighlightedSearch_Example/Pods-HighlightedSearch_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HighlightedSearch_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE9733080C344EF4E244E4A238369F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D253BB2C17E3212886356A87E4D682 /* HighlightedSearch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HighlightedSearch/HighlightedSearch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HighlightedSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HighlightedSearch/HighlightedSearch.modulemap";
+				PRODUCT_NAME = HighlightedSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C101465A0EEBECE176B60CF52470FBC3 /* Build configuration list for PBXNativeTarget "Pods-HighlightedSearch_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F193C81E2C5513FCA50661B5EE0C25 /* Debug */,
+				13B100D11354356C850B99804CAF4EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42008DA608B32E7EEFB26DC34AC4A36 /* Build configuration list for PBXNativeTarget "HighlightedSearch-HighlightedSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C864F5AF5A66DB4DAAC35F9CBC1A02 /* Debug */,
+				BCEB8CD18488D4D12EF17A7CCC7F8424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE13C6351D67D5EDE342DF094E155429 /* Build configuration list for PBXNativeTarget "HighlightedSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9733080C344EF4E244E4A238369F1A /* Debug */,
+				5065CE0691F3737B5F215FCB992D4EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE0919BE49C3292A669C17E6DDE845B5 /* Build configuration list for PBXNativeTarget "Pods-HighlightedSearch_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8C4BE21D21D66B2C350A1DBB94ED63 /* Debug */,
+				4B209AE758168E7043677DF4C35E4520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
