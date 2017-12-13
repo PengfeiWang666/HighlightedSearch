@@ -7,8 +7,6 @@
 #ifndef _ChineseToPinyinResource_H_
 #define _ChineseToPinyinResource_H_
 
-#import <Foundation/Foundation.h>
-
 @class NSArray;
 @class NSMutableDictionary;
 

@@ -2,7 +2,7 @@
 # platform :ios, '8.0'
 
 target 'HighlightedSearchDemo' do
-  pod 'HighlightedSearch'
+    pod 'HighlightedSearch', path:'../'
   pod 'PinYin4Objc'
 
 end

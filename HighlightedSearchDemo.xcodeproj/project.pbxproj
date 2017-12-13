@@ -10,12 +10,6 @@
 		354E907E1FDA31E200A63A1E /* WPFPinYinDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E907A1FDA31E200A63A1E /* WPFPinYinDataManager.m */; };
 		354E907F1FDA31E200A63A1E /* WPFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E907B1FDA31E200A63A1E /* WPFPerson.m */; };
 		354E90801FDA31E200A63A1E /* WPFPinYinTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E907C1FDA31E200A63A1E /* WPFPinYinTools.m */; };
-		354E90C31FE0BC6800A63A1E /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E90B81FE0BC6800A63A1E /* NSString+PinYin4Cocoa.m */; };
-		354E90C41FE0BC6800A63A1E /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E90BB1FE0BC6800A63A1E /* PinyinHelper.m */; };
-		354E90C51FE0BC6800A63A1E /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E90BD1FE0BC6800A63A1E /* HanyuPinyinOutputFormat.m */; };
-		354E90C61FE0BC6800A63A1E /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E90BE1FE0BC6800A63A1E /* ChineseToPinyinResource.m */; };
-		354E90C71FE0BC6800A63A1E /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E90BF1FE0BC6800A63A1E /* PinyinFormatter.m */; };
-		354E90C81FE0BC6800A63A1E /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 354E90C21FE0BC6800A63A1E /* unicode_to_hanyu_pinyin.txt */; };
 		358D8D601FC414D800FD5AAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D5F1FC414D800FD5AAC /* AppDelegate.m */; };
 		358D8D631FC414D800FD5AAC /* WPFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D621FC414D800FD5AAC /* WPFViewController.m */; };
 		358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D671FC414D800FD5AAC /* Assets.xcassets */; };
@@ -23,6 +17,7 @@
 		358D8D6E1FC414D800FD5AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D6D1FC414D800FD5AAC /* main.m */; };
 		358D8D761FC425AE00FD5AAC /* PersonList.json in Resources */ = {isa = PBXBuildFile; fileRef = 358D8D751FC425AE00FD5AAC /* PersonList.json */; };
 		358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */; };
+		E62443BB32A3D1AE194B4BA4 /* libPods-HighlightedSearchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E7A5281B7EA1A951EDCCAB /* libPods-HighlightedSearchDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,18 +27,6 @@
 		354E907B1FDA31E200A63A1E /* WPFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFPerson.m; sourceTree = "<group>"; };
 		354E907C1FDA31E200A63A1E /* WPFPinYinTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFPinYinTools.m; sourceTree = "<group>"; };
 		354E907D1FDA31E200A63A1E /* WPFPinYinDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFPinYinDataManager.h; sourceTree = "<group>"; };
-		354E90B61FE0BC6800A63A1E /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
-		354E90B71FE0BC6800A63A1E /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
-		354E90B81FE0BC6800A63A1E /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
-		354E90B91FE0BC6800A63A1E /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
-		354E90BA1FE0BC6800A63A1E /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
-		354E90BB1FE0BC6800A63A1E /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
-		354E90BC1FE0BC6800A63A1E /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
-		354E90BD1FE0BC6800A63A1E /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
-		354E90BE1FE0BC6800A63A1E /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
-		354E90BF1FE0BC6800A63A1E /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
-		354E90C01FE0BC6800A63A1E /* PinYin4Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin4Objc.h; sourceTree = "<group>"; };
-		354E90C21FE0BC6800A63A1E /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		358D8D5B1FC414D800FD5AAC /* HighlightedSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighlightedSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358D8D5E1FC414D800FD5AAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		358D8D5F1FC414D800FD5AAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +39,9 @@
 		358D8D751FC425AE00FD5AAC /* PersonList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonList.json; sourceTree = "<group>"; };
 		358D8D771FC524D000FD5AAC /* WPFSearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFSearchResultViewController.h; sourceTree = "<group>"; };
 		358D8D781FC524D000FD5AAC /* WPFSearchResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFSearchResultViewController.m; sourceTree = "<group>"; };
+		4E9B88D785814B9F0EA32445 /* Pods-HighlightedSearchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighlightedSearchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HighlightedSearchDemo/Pods-HighlightedSearchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		64E7A5281B7EA1A951EDCCAB /* libPods-HighlightedSearchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HighlightedSearchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A857BAB9BECC0B49F6161C /* Pods-HighlightedSearchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighlightedSearchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HighlightedSearchDemo/Pods-HighlightedSearchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62443BB32A3D1AE194B4BA4 /* libPods-HighlightedSearchDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,49 +67,6 @@
 				354E907D1FDA31E200A63A1E /* WPFPinYinDataManager.h */,
 			);
 			path = HighlightedSearch;
-			sourceTree = "<group>";
-		};
-		354E90811FDA322000A63A1E /* 3rd */ = {
-			isa = PBXGroup;
-			children = (
-				354E90B41FE0BC6800A63A1E /* PinYin4Objc */,
-			);
-			path = 3rd;
-			sourceTree = "<group>";
-		};
-		354E90B41FE0BC6800A63A1E /* PinYin4Objc */ = {
-			isa = PBXGroup;
-			children = (
-				354E90B51FE0BC6800A63A1E /* Classes */,
-				354E90C11FE0BC6800A63A1E /* Resources */,
-			);
-			path = PinYin4Objc;
-			sourceTree = "<group>";
-		};
-		354E90B51FE0BC6800A63A1E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				354E90B61FE0BC6800A63A1E /* PinyinHelper.h */,
-				354E90B71FE0BC6800A63A1E /* HanyuPinyinOutputFormat.h */,
-				354E90B81FE0BC6800A63A1E /* NSString+PinYin4Cocoa.m */,
-				354E90B91FE0BC6800A63A1E /* ChineseToPinyinResource.h */,
-				354E90BA1FE0BC6800A63A1E /* PinyinFormatter.h */,
-				354E90BB1FE0BC6800A63A1E /* PinyinHelper.m */,
-				354E90BC1FE0BC6800A63A1E /* NSString+PinYin4Cocoa.h */,
-				354E90BD1FE0BC6800A63A1E /* HanyuPinyinOutputFormat.m */,
-				354E90BE1FE0BC6800A63A1E /* ChineseToPinyinResource.m */,
-				354E90BF1FE0BC6800A63A1E /* PinyinFormatter.m */,
-				354E90C01FE0BC6800A63A1E /* PinYin4Objc.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		354E90C11FE0BC6800A63A1E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				354E90C21FE0BC6800A63A1E /* unicode_to_hanyu_pinyin.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		355BEAB31FC54DF900040E0F /* ViewControllers */ = {
@@ -149,6 +93,8 @@
 				354E90771FDA31E200A63A1E /* HighlightedSearch */,
 				358D8D5D1FC414D800FD5AAC /* HighlightedSearchDemo */,
 				358D8D5C1FC414D800FD5AAC /* Products */,
+				E5F3DEF5B87E81ED46BD7192 /* Pods */,
+				F9C4AF61BDDD0BACFB350E66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				355BEAB41FC54E2400040E0F /* Tools */,
-				354E90811FDA322000A63A1E /* 3rd */,
 				358D8D7A1FC54B7800FD5AAC /* Model */,
 				355BEAB31FC54DF900040E0F /* ViewControllers */,
 				358D8D741FC425A700FD5AAC /* Otherts */,
@@ -193,6 +138,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E5F3DEF5B87E81ED46BD7192 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A857BAB9BECC0B49F6161C /* Pods-HighlightedSearchDemo.debug.xcconfig */,
+				4E9B88D785814B9F0EA32445 /* Pods-HighlightedSearchDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9C4AF61BDDD0BACFB350E66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64E7A5281B7EA1A951EDCCAB /* libPods-HighlightedSearchDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 358D8D711FC414D800FD5AAC /* Build configuration list for PBXNativeTarget "HighlightedSearchDemo" */;
 			buildPhases = (
+				9CE30363AFAD520D23A69A3E /* [CP] Check Pods Manifest.lock */,
 				358D8D571FC414D800FD5AAC /* Sources */,
 				358D8D581FC414D800FD5AAC /* Frameworks */,
 				358D8D591FC414D800FD5AAC /* Resources */,
+				B3881AC4E19C2D5DB0E3ADD2 /* [CP] Embed Pods Frameworks */,
+				F43B14ACD7A0B120E7724DD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354E90C81FE0BC6800A63A1E /* unicode_to_hanyu_pinyin.txt in Resources */,
 				358D8D6B1FC414D800FD5AAC /* LaunchScreen.storyboard in Resources */,
 				358D8D681FC414D800FD5AAC /* Assets.xcassets in Resources */,
 				358D8D761FC425AE00FD5AAC /* PersonList.json in Resources */,
@@ -260,21 +224,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CE30363AFAD520D23A69A3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighlightedSearchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3881AC4E19C2D5DB0E3ADD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighlightedSearchDemo/Pods-HighlightedSearchDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43B14ACD7A0B120E7724DD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HighlightedSearchDemo/Pods-HighlightedSearchDemo-resources.sh",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighlightedSearchDemo/Pods-HighlightedSearchDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		358D8D571FC414D800FD5AAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354E90C41FE0BC6800A63A1E /* PinyinHelper.m in Sources */,
 				358D8D631FC414D800FD5AAC /* WPFViewController.m in Sources */,
 				358D8D6E1FC414D800FD5AAC /* main.m in Sources */,
 				354E907E1FDA31E200A63A1E /* WPFPinYinDataManager.m in Sources */,
 				358D8D601FC414D800FD5AAC /* AppDelegate.m in Sources */,
 				354E907F1FDA31E200A63A1E /* WPFPerson.m in Sources */,
-				354E90C51FE0BC6800A63A1E /* HanyuPinyinOutputFormat.m in Sources */,
-				354E90C71FE0BC6800A63A1E /* PinyinFormatter.m in Sources */,
-				354E90C61FE0BC6800A63A1E /* ChineseToPinyinResource.m in Sources */,
-				354E90C31FE0BC6800A63A1E /* NSString+PinYin4Cocoa.m in Sources */,
 				354E90801FDA31E200A63A1E /* WPFPinYinTools.m in Sources */,
 				358D8D791FC524D000FD5AAC /* WPFSearchResultViewController.m in Sources */,
 			);
@@ -400,6 +413,7 @@
 		};
 		358D8D721FC414D800FD5AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A857BAB9BECC0B49F6161C /* Pods-HighlightedSearchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +429,7 @@
 		};
 		358D8D731FC414D800FD5AAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9B88D785814B9F0EA32445 /* Pods-HighlightedSearchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

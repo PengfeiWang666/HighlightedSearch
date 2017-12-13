@@ -276,7 +276,7 @@
                   withHanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)outputFormat
                                  withNSString:(NSString *)seperater {
     NSMutableString *resultPinyinStrBuf = [[NSMutableString alloc] init];
-    for (int i = 0; i < str.length; i++) {
+    for (int i = 0; i <  str.length; i++) {
         NSString *mainPinyinStrOfChar = [PinyinHelper getFirstHanyuPinyinStringWithChar:[str characterAtIndex:i] withHanyuPinyinOutputFormat:outputFormat];
         if (nil != mainPinyinStrOfChar) {
             [resultPinyinStrBuf appendString:mainPinyinStrOfChar];
