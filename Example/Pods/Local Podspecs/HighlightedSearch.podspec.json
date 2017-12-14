@@ -18,7 +18,7 @@
     "git": "https://github.com/PengfeiWang666/HighlightedSearch.git",
     "tag": "0.1.0"
   },
-  "source_files": "HighlightedSearch/Classes/*",
+  "source_files": "HighlightedSearch/Classes/*.{h,m}",
   "resource_bundles": {
     "HighlightedSearch": [
       "HighlightedSearch/Assets/*.txt"
