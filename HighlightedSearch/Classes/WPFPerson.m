@@ -12,7 +12,7 @@
 
 @implementation WPFPerson
 
-+ (instancetype)personWithName:(NSString *)name hanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat {
++ (instancetype)personWithId:(NSString *)personId name:(NSString *)name hanyuPinyinOutputFormat:(HanyuPinyinOutputFormat *)pinyinFormat {
     WPFPerson *person = [[WPFPerson alloc] init];
     
     // 拼音全拼
@@ -118,6 +118,7 @@
     }
     
     person.name = name;
+    person.personId = personId;
     person.completeSpelling = completeSpelling;
     person.initialString = initialString;
     person.pinyinLocationString = [completeSpellingArray componentsJoinedByString:@","];

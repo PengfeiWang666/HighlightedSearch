@@ -42,16 +42,10 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     self.dataSource = personArray;
     // 将假数据按字母进行排序
     
-    
     NSDate *beginTime = [NSDate date];
     NSLog(@"开始解析数据了，开始时间：%@，数据条数：%ld", beginTime, (unsigned long)personArray.count);
     
     // 以下测试数据均为 iPhone SE（10.2） 真机测试
-    /**
-     2017-12-06 11:52:08.656280 HighlightedSearch[4397:1868099] 开始解析数据了，开始时间：2017-12-06 03:52:08 +0000，数据条数：1006
-     2017-12-06 11:52:09.683399 HighlightedSearch[4397:1868099] 解析结束，结束时间：2017-12-06 03:52:09 +0000，耗时：1.0291 秒
-     */
-//    for (NSInteger i = 0; i < personArray.count; ++i) {
     
     
     /**
@@ -67,9 +61,15 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
      2017-12-06 11:51:17.994211 HighlightedSearch[4387:1867649] 开始解析数据了，开始时间：2017-12-06 03:51:17 +0000，数据条数：1006
      2017-12-06 11:51:19.064917 HighlightedSearch[4387:1867649] 解析结束，结束时间：2017-12-06 03:51:19 +0000，耗时：1.0728 秒
      */
-    for (NSString *name in personArray) {
+//    for (NSString *name in personArray) {
+    /**
+     2017-12-06 11:52:08.656280 HighlightedSearch[4397:1868099] 开始解析数据了，开始时间：2017-12-06 03:52:08 +0000，数据条数：1006
+     2017-12-06 11:52:09.683399 HighlightedSearch[4397:1868099] 解析结束，结束时间：2017-12-06 03:52:09 +0000，耗时：1.0291 秒
+     */
+    for (NSInteger i = 0; i < personArray.count; ++i) {
         @autoreleasepool {
-            [WPFPinYinDataManager addInitializeString:name];
+            NSString *name = personArray[i];
+            [WPFPinYinDataManager addInitializeString:name identifer:[@(i) stringValue]];
         }
     }
 //    }];

@@ -1,4 +1,4 @@
-//
+  //
 //  WPFPinYinDataManager.m
 //  HighlightedSearch
 //
@@ -22,9 +22,9 @@
 
 #pragma mark - Public Method
 
-+ (void)addInitializeString:(NSString *)string {
++ (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier {
     WPFPinYinDataManager *manager = [WPFPinYinDataManager _shareInstance];
-    WPFPerson *person = [WPFPerson personWithName:string hanyuPinyinOutputFormat:manager.outputFormat];
+    WPFPerson *person = [WPFPerson personWithId:identifier name:string hanyuPinyinOutputFormat:manager.outputFormat];
     [manager.dataSource addObject:person];
 }
 

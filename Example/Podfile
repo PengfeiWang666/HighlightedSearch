@@ -2,7 +2,6 @@ use_frameworks!
 
 target 'HighlightedSearch_Example' do
   pod 'HighlightedSearch', :path => '../'
-#pod 'PinYin4Objc'
   target 'HighlightedSearch_Tests' do
     inherit! :search_paths
 
