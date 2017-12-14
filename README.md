@@ -17,5 +17,39 @@ Demo 效果如图所示
   * 全拼相关："li"、"liu"、"liuy"、"liuyi"、"liuyif"、"liuyife"、"liuyifei"、"yi"、"yif"、"yife"、"yifei"、"fe"、"fei"
 * 拼音的重难点还包括：比如搜索关键字为“xian”，既要匹配出“先”，也要匹配出“西安”
 
-代码细节讲解
-[]()
+[代码细节讲解](https://juejin.im/post/5a32212c6fb9a0452341e80c)
+
+
+## 使用方法
+##### 1. 事例工程
+
+* git clone git@github.com:PengfeiWang666/HighlightedSearch.git
+* cd Example
+* open HighlightedSearch.xcworkspace
+
+##### 2. Install
+
+* pod "HighlightedSearch"
+
+##### 3. Usage
+// WPFPinYinDataManager 依次添加数据源（标识符为了防止重名现象）
++ (void)addInitializeString:(NSString *)string identifer:(NSString *)identifier
+
+// 更新搜索结果
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    ...
+    ...
+    for (WPFPerson *person in [WPFPinYinDataManager getInitializedDataSource]) {
+        WPFSearchResultModel *resultModel = [WPFPinYinTools searchEffectiveResultWithSearchString:keyWord Person:person];
+        if (resultModel.highlightedRange.length) {
+            person.highlightLoaction = resultModel.highlightedRange.location;
+            person.textRange = resultModel.highlightedRange;
+            person.matchType = resultModel.matchType;
+                [resultDataSource addObject:person];
+        }
+}
+
+作者：si1ence
+链接：https://juejin.im/post/5a32212c6fb9a0452341e80c
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
