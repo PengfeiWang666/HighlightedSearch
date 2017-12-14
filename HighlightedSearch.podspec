@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.author             = { "WangPengfei" => "wpf_silence@163.com" }
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/PengfeiWang666/HighlightedSearch.git", :tag => s.version }
-  s.source_files  = "HighlightedSearch/Classes/*"
+  s.source_files  = "HighlightedSearch/**/*.{h,m}"
   s.resource_bundles = {
-     'HighlightedSearch' => ['HighlightedSearch/Assets/*.txt']
+     'HighlightedSearch' => ['HighlightedSearch/**/*.txt']
    }
   # s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
