@@ -1,7 +1,7 @@
 # HighlightedSearch
 
-* ♥️🇨🇳[简体中文](https://github.com/PengfeiWang666/HighlightedSearch/blob/master/README.md)  
-* 🌍🇺🇸[English](https://github.com/PengfeiWang666/HighlightedSearch/blob/master/README-en.md)
+* ♥️[简体中文](https://github.com/PengfeiWang666/HighlightedSearch/blob/master/README.md)  
+* 🌍[English](https://github.com/PengfeiWang666/HighlightedSearch/blob/master/README-en.md)
 
 ## 基本介绍
 * 类似微信的客户端本地搜索、搜索关键字高亮显示
