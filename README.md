@@ -31,7 +31,7 @@ Demo 效果如图所示
 
 
 ## 使用方法
-##### 1. 事例工程
+##### 1. 示例工程
 
 * git clone git@github.com:PengfeiWang666/HighlightedSearch.git
 * cd Example
